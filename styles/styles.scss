@@ -1,3 +1,13 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
 
 @import "__navbar.scss";
 @import "__firstcontainer.scss";
+@import "__secondcontainer.scss";
+@import "__thirdcontainer.scss";
+@import "__pricingsection.scss";
+@import "__contact.scss";
+@import "__footer.scss";

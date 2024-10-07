@@ -1,0 +1,123 @@
+.third__section{
+    background-color:rgba(232, 233, 237, 1);
+    padding-top: 2rem;
+    padding-right: .05em;
+    padding-bottom: 1.5rem;
+    padding-left: .05rem ;
+
+}
+
+.first__card, .second__card {
+    background-color:rgba(247, 247, 247, 1);
+    border-color:rgba(232, 233, 237, 1);
+    width: 15.5rem;
+    margin: auto;
+    padding-top: 2.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-radius: .4rem;
+    text-align: center;
+
+}
+
+.macbook2{
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+    margin-left: 1.5rem; 
+
+}
+
+.dot__macbook2 {
+    position: relative;
+    margin-left: 6.5rem;
+    margin-top: -2.5rem;
+
+}
+
+.iphone{
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+
+}
+
+.dot__iphone{
+    position: relative;
+    margin-left: .2rem;
+    margin-top: -.5rem;
+
+}
+
+.text__macbook2, .text__iphone {
+    font-family: "Raleway";
+    font-size: xx-large;
+    font-weight:300;
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+
+}
+
+.p__macbook2, .p__iphone{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    font-size: small;
+    text-align: left;
+
+}
+
+
+.third__card {
+    background-color:rgba(247, 247, 247, 1);
+    border-color:rgba(232, 233, 237, 1);
+    width: 15.5rem;
+    padding-right: 2.9rem;
+    margin: auto;
+    border-radius: .4rem;
+    text-align: center;
+
+}
+
+.trumpet{
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+    padding-top:2rem;
+    padding-left: 1rem;
+    
+   
+}
+
+.bg__trumpet{
+    position: relative;
+    width: 120%;
+    padding-right: 2.5rem;
+
+
+}
+
+.text__trumpet{
+    font-family: "Raleway";
+    font-size: xx-large;
+    font-weight:300;
+    text-align: left;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+
+}
+
+.p__trumpet{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    font-size: small;
+    text-align: left;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+
+}
+
