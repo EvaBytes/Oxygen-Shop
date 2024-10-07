@@ -1,38 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
+  padding: 1rem;
   background-color: #ffffff;
+  box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
 }
 
 .navbar__h1 {
   font-weight: lighter;
   font-family: "Raleway";
+  font-size: xx-large;
   color: rgb(8, 166, 228);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  margin-left: 0.8rem;
+  margin-left: 0.6rem;
   display: inline;
 }
 
 .menu__img {
-  width: 1.1rem;
   position: absolute;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 0.8rem;
-  margin-right: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  margin-right: 1.4rem;
   right: 0;
 }
 
 .first__section {
   background-color: white;
-  font-family: "Raleway";
-  font-weight: lighter;
   text-align: center;
-  padding: 1rem;
   margin-top: 2.5rem;
 }
 
 .text__h2 {
-  font-weight: 450;
+  font-family: "Raleway";
+  font-size: xx-large;
+  font-weight: 400;
+  padding: 1.2rem;
+}
+
+.first__p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
 }
 
 .button__shop {
@@ -44,10 +55,521 @@
   padding-right: 5rem;
   padding-bottom: 1.2rem;
   padding-left: 5rem;
+  margin-top: 2.2rem;
   border-color: transparent;
-  box-shadow: 0 4px 2px -2px rgb(116, 160, 176);
+  box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
+  font-size: large;
+  font-weight: 500;
 }
 
 .first__section__image {
+  display: block;
+  width: 100%;
   padding-top: 2rem;
+}
+
+.second__section {
+  background-color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.second__text {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: xx-large;
+  padding-bottom: 2rem;
+}
+
+.person__icon {
+  position: absolute;
+  margin-top: 1rem;
+  margin-right: 9.8rem;
+  right: 0;
+}
+
+.views__icon {
+  position: absolute;
+  margin-top: 1.6rem;
+  margin-right: 8.95rem;
+  right: 0;
+}
+
+.post__icon {
+  position: absolute;
+  margin-top: 1.2rem;
+  margin-right: 9.2rem;
+  right: 0;
+}
+
+.red__dot, .green__dot, .blue__dot {
+  position: relative;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  margin-right: 1.4rem;
+  right: 0;
+}
+
+.daily__entries__number, .views__icon__number, .post__number {
+  font-family: "Raleway";
+  font-size: large;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.daily__entries__text, .views__text, .post__text {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: medium;
+  color: rgb(165, 165, 165);
+  padding: 0.8rem;
+}
+
+.third__section {
+  background-color: rgb(232, 233, 237);
+  padding-top: 2rem;
+  padding-right: 0.05em;
+  padding-bottom: 1.5rem;
+  padding-left: 0.05rem;
+}
+
+.first__card, .second__card {
+  background-color: rgb(247, 247, 247);
+  border-color: rgb(232, 233, 237);
+  width: 15.5rem;
+  margin: auto;
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.macbook2 {
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+  margin-left: 1.5rem;
+}
+
+.dot__macbook2 {
+  position: relative;
+  margin-left: 6.5rem;
+  margin-top: -2.5rem;
+}
+
+.iphone {
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+}
+
+.dot__iphone {
+  position: relative;
+  margin-left: 0.2rem;
+  margin-top: -0.5rem;
+}
+
+.text__macbook2, .text__iphone {
+  font-family: "Raleway";
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+}
+
+.p__macbook2, .p__iphone {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: small;
+  text-align: left;
+}
+
+.third__card {
+  background-color: rgb(247, 247, 247);
+  border-color: rgb(232, 233, 237);
+  width: 15.5rem;
+  padding-right: 2.9rem;
+  margin: auto;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.trumpet {
+  position: absolute;
+  width: 70%;
+  z-index: 1;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.bg__trumpet {
+  position: relative;
+  width: 120%;
+  padding-right: 2.5rem;
+}
+
+.text__trumpet {
+  font-family: "Raleway";
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: left;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.p__trumpet {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: small;
+  text-align: left;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.pricing__section {
+  padding-top: 2rem;
+  padding-right: 0.05em;
+  padding-bottom: 1rem;
+  padding-left: 0.05rem;
+}
+
+.pricing__header {
+  font-size: xx-large;
+  font-family: "Raleway";
+  font-weight: 300;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*BASIC Pricing Card*/
+.basic__t {
+  font-size: larger;
+  font-family: "Raleway";
+  font-weight: 600;
+  width: 50%;
+  text-align: left;
+  position: relative;
+  top: 7rem;
+  left: 1rem;
+}
+
+.price__basic {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(251, 59, 100);
+  font-size: xxx-large;
+  font-weight: 200;
+  text-align: left;
+  width: 50%;
+  position: relative;
+  top: 7.5rem;
+  left: 1rem;
+}
+
+.basic {
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: rgb(251, 59, 100);
+  border-width: 0.1rem;
+  width: 15.5rem;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.basic__list {
+  list-style: none;
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  left: 4rem;
+  justify-content: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2.5rem;
+}
+
+.basic__pricing__button {
+  position: relative;
+  top: 1.5rem;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(251, 59, 100);
+  border-color: transparent;
+  padding-top: 1rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left: 3.5rem;
+  border-radius: 2em;
+}
+
+/*PRO Pricing Card*/
+.pro {
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: rgb(7, 172, 230);
+  box-shadow: 4px 7px 9px 4px rgba(7, 172, 230, 0.29);
+  border-width: 0.1rem;
+  width: 16rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.pro__t {
+  font-size: larger;
+  font-family: "Raleway";
+  font-weight: 600;
+  width: 40%;
+  text-align: left;
+  position: relative;
+  top: 7rem;
+}
+
+.price__pro {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(7, 172, 230);
+  font-size: xxx-large;
+  font-weight: 200;
+  text-align: left;
+  width: 50%;
+  position: relative;
+  top: 7.5rem;
+  left: 0.5rem;
+}
+
+.limited__offer {
+  font-size: smaller;
+  font-family: "Raleway";
+  font-weight: 500;
+  text-align: left;
+  width: 50%;
+  position: relative;
+  top: 8.5rem;
+  left: 0.8rem;
+}
+
+.pro__list {
+  list-style: none;
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  left: 4rem;
+  justify-content: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2.5rem;
+}
+
+.pro__pricing__button {
+  position: relative;
+  top: 1.5rem;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(7, 172, 230);
+  border-color: transparent;
+  padding-top: 1rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left: 3.5rem;
+  border-radius: 2em;
+}
+
+/*PREMIUM Pricing Card*/
+.premium {
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: rgb(85, 223, 180);
+  border-width: 0.1rem;
+  width: 15.5rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.premium__t {
+  font-size: larger;
+  font-family: "Raleway";
+  font-weight: 600;
+  width: 40%;
+  text-align: left;
+  position: relative;
+  top: 7rem;
+}
+
+.price__premium {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(85, 223, 180);
+  font-size: xxx-large;
+  font-weight: 200;
+  text-align: left;
+  width: 50%;
+  position: relative;
+  top: 7.5rem;
+}
+
+.premium__list {
+  list-style: none;
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  left: 4rem;
+  justify-content: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2.5rem;
+}
+
+.premium__pricing__button {
+  position: relative;
+  top: 1.5rem;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(85, 223, 180);
+  border-color: transparent;
+  padding-top: 1rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1rem;
+  padding-left: 3.5rem;
+  border-radius: 2em;
+}
+
+.check {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+.cross {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+.contact {
+  background-color: rgb(255, 255, 255);
+  border: transparent;
+  margin: auto;
+  padding-top: 2.5rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.h2__contact {
+  font-family: "Raleway";
+  font-size: xx-large;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+.p__contact {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.form__section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: block;
+}
+
+.p__email, .p__phone {
+  color: rgb(165, 165, 165);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  text-align: left;
+}
+
+.name, .email {
+  color: rgb(8, 166, 228);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: smaller;
+  display: block;
+  width: 100%;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.checkbox {
+  display: block;
+  margin-top: 2rem;
+  width: 5%;
+}
+
+.consentment {
+  color: rgb(112, 112, 112);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: small;
+  display: inline-block;
+  position: relative;
+  bottom: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.send__button {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 166, 228);
+  border-radius: 2em;
+  padding-top: 1.2rem;
+  padding-right: 5rem;
+  padding-bottom: 1.2rem;
+  padding-left: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  border-color: transparent;
+  box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
+  font-size: large;
+  font-weight: 500;
+}
+
+footer {
+  padding-top: 1.4rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.29);
+}
+
+.footer__h1 {
+  color: rgb(8, 166, 228);
+  font-family: "Raleway";
+  font-size: xx-large;
+  font-weight: lighter;
+  display: inline;
+}
+
+.p__footer {
+  color: rgb(165, 165, 165);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: smaller;
+  font-weight: 300;
+}
+
+.footer__img {
+  position: relative;
+  left: 16rem;
+  bottom: 2rem;
+  padding-right: 1rem;
 }/*# sourceMappingURL=styles.css.map */
