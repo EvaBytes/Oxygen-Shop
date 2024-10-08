@@ -251,7 +251,6 @@
   padding-bottom: 1rem;
 }
 
-/*BASIC Pricing Card*/
 .basic {
   background-color: rgb(255, 255, 255);
   border: solid;
@@ -311,7 +310,6 @@
   border-radius: 2em;
 }
 
-/*PRO Pricing Card*/
 .pro {
   background-color: rgb(255, 255, 255);
   border: solid;
@@ -379,7 +377,6 @@
   border-radius: 2em;
 }
 
-/*PREMIUM Pricing Card*/
 .premium {
   background-color: rgb(255, 255, 255);
   border: solid;
