@@ -3,24 +3,25 @@
     background-color: #ffffff;
     box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
 
-  
+    &__logo{
+        font-weight:lighter;
+        font-family: "Raleway";
+        font-size:xx-large;
+        color:rgb(8, 166, 228);
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: .6rem;
+        display: inline;
+    }
+    
+    &__menu-img{
+        position: absolute;
+        margin-top: .8rem;
+        margin-bottom: 1rem;
+        margin-right: 1.4rem;
+        right: 0;
+    }
 }   
 
-.navbar__h1 {
-    font-weight:lighter;
-    font-family: "Raleway";
-    font-size:xx-large;
-    color:rgb(8, 166, 228);
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    margin-left: .6rem;
-    display: inline;
-}
 
-.menu__img{
-    position: absolute;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-    margin-right: 1.4rem;
-    right: 0;
-}
+

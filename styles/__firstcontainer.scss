@@ -3,39 +3,43 @@
     text-align: center;
     margin-top: 2.5rem;
     
+
+    &__text{
+        font-family: "Raleway";
+        font-size: xx-large;
+        font-weight:400;
+        padding: 1.2rem;
+    }
+
+    &__p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        }
+    
+            
+    &__button-shop{
+        font-weight:bold;
+        color:rgb(255, 255, 255);
+        background-color:rgb(8, 166, 228);
+        border-radius: 2em;
+        padding-top: 1.2rem;
+        padding-right: 5rem;
+        padding-bottom: 1.2rem;
+        padding-left: 5rem;
+        margin-top: 2.2rem;
+        border-color: transparent;
+        box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
+        font-size:large;
+        font-weight:500;
+    }
+
+    &__image{
+        display: block;
+        width:100%;
+        padding-top: 2rem;
+    
+    }
 }
 
-.text__h2{
-    font-family: "Raleway";
-    font-size: xx-large;
-    font-weight:400;
-    padding: 1.2rem;
-}
 
-.first__p{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 200;
-}
 
-.button__shop{
-    font-weight:bold;
-    color:rgb(255, 255, 255);
-    background-color:rgb(8, 166, 228);
-    border-radius: 2em;
-    padding-top: 1.2rem;
-    padding-right: 5rem;
-    padding-bottom: 1.2rem;
-    padding-left: 5rem;
-    margin-top: 2.2rem;
-    border-color: transparent;
-    box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
-    font-size:large;
-    font-weight:500;
-}
-
-.first__section__image{
-    display: block;
-    width:100%;
-    padding-top: 2rem;
-
-}

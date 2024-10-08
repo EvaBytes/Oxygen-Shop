@@ -7,7 +7,7 @@
 
 }
 
-.first__card, .second__card {
+.first__card {
     background-color:rgba(247, 247, 247, 1);
     border-color:rgba(232, 233, 237, 1);
     margin: auto;
@@ -19,53 +19,85 @@
     border-radius: .4rem;
     text-align: center;
 
+    &__macbook2{
+        position: absolute;
+        width: 50%;
+        z-index: 1;
+        margin-left: 1.5rem; 
+    
+    }
+
+    &__dot-macbook2 {
+        position: relative;
+        margin-left: 6.5rem;
+        margin-top: -2.5rem;
+
+    }
+    
+    &__text-macbook2{
+        font-family: "Raleway";
+        font-size: xx-large;
+        font-weight:300;
+        text-align: left;
+        padding-top: 2rem;
+        padding-bottom: 1.2rem;
+    
+    }
+
+    &__p-macbook2{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        font-size: small;
+        text-align: left;
+    
+    }
 }
 
-.macbook2{
-    position: absolute;
-    width: 50%;
-    z-index: 1;
-    margin-left: 1.5rem; 
+.second__card {
+    background-color:rgba(247, 247, 247, 1);
+    border-color:rgba(232, 233, 237, 1);
+    margin: auto;
+    margin-bottom: 3rem;
+    padding-top: 2.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-radius: .4rem;
+    text-align: center;
 
-}
 
-.dot__macbook2 {
-    position: relative;
-    margin-left: 6.5rem;
-    margin-top: -2.5rem;
+    &__iphone{
+        position: absolute;
+        width: 50%;
+        z-index: 1;
 
-}
+    }
 
-.iphone{
-    position: absolute;
-    width: 50%;
-    z-index: 1;
+    &__dot-iphone{
+        position: relative;
+        margin-left: .2rem;
+        margin-top: -.5rem;
 
-}
+    }
 
-.dot__iphone{
-    position: relative;
-    margin-left: .2rem;
-    margin-top: -.5rem;
+    &__text-iphone {
+        font-family: "Raleway";
+        font-size: xx-large;
+        font-weight:300;
+        text-align: left;
+        padding-top: 2rem;
+        padding-bottom: 1.2rem;
+    
+    }
 
-}
-
-.text__macbook2, .text__iphone {
-    font-family: "Raleway";
-    font-size: xx-large;
-    font-weight:300;
-    text-align: left;
-    padding-top: 2rem;
-    padding-bottom: 1.2rem;
-
-}
-
-.p__macbook2, .p__iphone{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 200;
-    font-size: small;
-    text-align: left;
-
+    &__p-iphone{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        font-size: small;
+        text-align: left;
+    
+    }
+    
 }
 
 
@@ -76,6 +108,30 @@
     margin: auto;
     border-radius: .4rem;
     text-align: center;
+
+
+    &__text-trumpet{
+        font-family: "Raleway";
+        font-size: xx-large;
+        font-weight:300;
+        text-align: left;
+        padding-top: 1rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+
+    }
+
+    &__p-trumpet{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        font-size: small;
+        text-align: left;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+
+    }
 
 }
 
@@ -89,32 +145,8 @@
    
 }
 
-.bg__trumpet{
+.bg-trumpet{
     padding-right: 2.5rem;
     padding-bottom: 2rem;
 
 }
-
-.text__trumpet{
-    font-family: "Raleway";
-    font-size: xx-large;
-    font-weight:300;
-    text-align: left;
-    padding-top: 1rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
-
-}
-
-.p__trumpet{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 200;
-    font-size: small;
-    text-align: left;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
-
-}
-

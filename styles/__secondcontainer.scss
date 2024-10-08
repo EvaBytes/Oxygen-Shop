@@ -3,61 +3,61 @@
         text-align: center;
         margin-top: 1rem;
     
+        &__main-text{
+            font-family: "Raleway";
+            font-weight:300;
+            font-size: xx-large;
+            padding-bottom: 2rem;
+        }
+
+        &__person-icon{
+            position: absolute;
+            margin-top: 1rem;
+            margin-right: 9.8rem;
+            right: 0;
+        }
+
+        &__views-icon{
+            position: absolute;
+            margin-top: 1.6rem;
+            margin-right: 8.95rem;
+            right: 0;
+
+        }
+
+
+        &__post-icon{
+            position: absolute;
+            margin-top: 1.2rem;
+            margin-right: 9.2rem;
+            right: 0;
+
+        }
+
+        &__red-dot, &__green-dot &__blue-dot{
+            position: relative;
+            margin-top: .8rem;
+            margin-bottom: 1rem;
+            margin-right: 1.4rem;
+            right: 0;
+            
+        }
+
+        &__entries-number, &__views-number, &__post-number{
+            font-family:"Raleway";
+            font-size: large;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+        }
+
+        &__entries-text, &__views-text,&__post-text{
+            font-family:"Raleway";
+            font-weight:100;
+            font-size:medium;
+            color: rgba(247, 247, 247, 1);
+            padding: .8rem;
+            
+        }
 }
 
-.second__text{
-    font-family: "Raleway";
-    font-weight:300;
-    font-size: xx-large;
-    padding-bottom: 2rem;
 
-}
-
-.person__icon{
-    position: absolute;
-    margin-top: 1rem;
-    margin-right: 9.8rem;
-    right: 0;
-}
-
-.views__icon{
-    position: absolute;
-    margin-top: 1.6rem;
-    margin-right: 8.95rem;
-    right: 0;
-
-}
-
-.post__icon{
-    position: absolute;
-    margin-top: 1.2rem;
-    margin-right: 9.2rem;
-    right: 0;
-
-}
-
-.red__dot, .green__dot, .blue__dot{
-    position: relative;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-    margin-right: 1.4rem;
-    right: 0;
-    
-}
-
-.daily__entries__number, .views__icon__number, .post__number{
-    font-family:"Raleway";
-    font-size: large;
-    font-weight: 700;
-    letter-spacing: 0.3rem;
-}
-
-.daily__entries__text, .views__text,.post__text{
-    font-family:"Raleway";
-    font-weight:100;
-    font-size:medium;
-    color: rgba(247, 247, 247, 1);
-
-    padding: .8rem;
-    
-}
