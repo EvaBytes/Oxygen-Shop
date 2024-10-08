@@ -203,13 +203,15 @@
   width: 70%;
   z-index: 1;
   padding-top: 2rem;
-  padding-left: 1rem;
+  padding-left: 2.5rem;
 }
 
 .bg__trumpet {
   position: relative;
-  width: 120%;
+  width: 79%;
   padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .text__trumpet {
@@ -481,7 +483,19 @@
   font-size: large;
   font-weight: 300;
   text-align: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.mail {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.phone {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .form__section {
@@ -490,13 +504,22 @@
   display: block;
 }
 
-.p__email, .p__phone {
+.p__email {
   color: rgb(165, 165, 165);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: medium;
   font-weight: 300;
-  text-align: left;
-  align-items: baseline;
+  margin-bottom: 1rem;
+  display: inline;
+}
+
+.p__phone {
+  color: rgb(165, 165, 165);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: medium;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  display: inline;
 }
 
 .name, .email {
@@ -527,6 +550,7 @@ input[type=text], [type=email] {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: small;
   display: inline-block;
+  text-align: justify;
   position: relative;
   bottom: 1.5rem;
   padding-left: 2rem;
@@ -547,6 +571,11 @@ input[type=text], [type=email] {
   box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
   font-size: large;
   font-weight: 500;
+}
+
+.mail__image, .phone__image {
+  position: relative;
+  top: 0.5rem;
 }
 
 footer {
