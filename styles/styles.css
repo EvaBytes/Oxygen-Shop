@@ -35,7 +35,7 @@
   margin-right: 1.4rem;
   right: 0;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 999px) {
   .navbar__web-menu {
     display: none;
   }
@@ -118,7 +118,6 @@
   font-weight: 200;
 }
 .first__section__button-shop {
-  font-weight: bold;
   color: rgb(255, 255, 255);
   background-color: rgb(8, 166, 228);
   border-radius: 2em;
@@ -136,6 +135,46 @@
   display: block;
   width: 100%;
   padding-top: 2rem;
+}
+@media only screen and (max-width: 999px) {
+  .first__section__p-web {
+    display: none;
+  }
+  .first__section__image-web {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .first__section__text {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .first__section__image {
+    display: none;
+  }
+  .first__section__p {
+    display: none;
+  }
+  .first__section__p-web {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    display: block;
+    font-size: small;
+  }
+  .first__section__button-shop {
+    padding-right: 8rem;
+    padding-bottom: 0.7rem;
+    padding-left: 8rem;
+    margin-top: 2rem;
+    font-size: small;
+    font-weight: 500;
+    justify-content: center;
+  }
+  .first__section__image-web {
+    display: inline;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .second__section {
@@ -186,6 +225,22 @@
   font-size: medium;
   color: rgb(247, 247, 247);
   padding: 0.8rem;
+}
+@media only screen and (max-width: 999px) {
+  .second__section__main-text-web {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .second__section__main-text {
+    display: none;
+  }
+  .second__section__main-text-web {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: xx-large;
+    padding-bottom: 2rem;
+  }
 }
 
 .third__section {

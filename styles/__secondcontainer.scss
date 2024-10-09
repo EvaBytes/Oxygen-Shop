@@ -58,6 +58,33 @@
             padding: .8rem;
             
         }
+
+        @media only screen and (max-width: 999px){
+            &__main-text-web{
+                display: none;
+            }
+    
+        }
+    
+        @media only screen and (min-width: 1000px){
+
+            &__main-text{
+                display: none;
+            }
+
+            &__main-text-web{
+                font-family: "Raleway";
+                font-weight:300;
+                font-size: xx-large;
+                padding-bottom: 2rem;
+            }
+
+
+
+
+        }
+
 }
+
 
 
