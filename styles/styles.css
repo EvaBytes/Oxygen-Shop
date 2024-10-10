@@ -39,6 +39,9 @@
   .navbar__web-menu {
     display: none;
   }
+  .navbar__logo-web {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .navbar {
@@ -51,12 +54,17 @@
     display: none;
   }
   .navbar__logo {
+    display: none;
+  }
+  .navbar__logo-web {
     font-weight: lighter;
     font-family: "Raleway";
-    font-size: x-large;
-    font-weight: 200;
+    font-size: large;
     color: rgb(8, 166, 228);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: 4rem;
+    display: inline;
   }
   .navbar__web-menu {
     list-style: none;
@@ -74,27 +82,6 @@
     display: flex;
     align-content: end;
     margin-right: 4rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 8px;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-  }
-  .navbar__web-menu3 {
-    color: rgb(165, 165, 165);
-    list-style: none;
-    display: flex;
-    align-content: end;
-    margin-right: 4rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 8px;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-  }
-  .navbar__web-menu4 {
-    color: rgb(165, 165, 165);
-    list-style: none;
-    display: flex;
-    align-content: end;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 8px;
     font-weight: 600;
@@ -178,6 +165,7 @@
 }
 
 .second__section {
+  position: relative;
   background-color: white;
   text-align: center;
   margin-top: 1rem;
@@ -202,14 +190,12 @@
 }
 .second__section__post-icon {
   position: absolute;
-  margin-top: 1.2rem;
-  margin-right: 9.2rem;
+  margin-top: 1rem;
+  margin-right: 8.5rem;
   right: 0;
 }
 .second__section__red-dot, .second__section__green-dot .second__section__blue-dot {
-  position: relative;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   margin-right: 1.4rem;
   right: 0;
 }
@@ -288,6 +274,25 @@
   font-size: small;
   text-align: left;
 }
+@media only screen and (max-width: 999px) {
+  .first__card__square-web {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .first__card {
+    display: flex;
+    align-items: center;
+  }
+  .first__card__dot-macbook2 {
+    display: none;
+  }
+  .first__card__square-web {
+    position: relative;
+    margin-left: 6.5rem;
+    margin-top: -2.5rem;
+  }
+}
 
 .second__card {
   background-color: rgb(247, 247, 247);
@@ -325,6 +330,12 @@
   font-size: small;
   text-align: left;
 }
+@media only screen and (min-width: 1000px) {
+  .second__card {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .third__card {
   background-color: rgb(247, 247, 247);
@@ -352,6 +363,12 @@
   padding-right: 1.5rem;
   padding-bottom: 1rem;
   padding-left: 1.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  .third__card {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .trumpet {
@@ -440,6 +457,14 @@
   padding-left: 3.5rem;
   border-radius: 2em;
 }
+.basic__check {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+.basic__cross {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
 
 .pro {
   background-color: rgb(255, 255, 255);
@@ -507,6 +532,14 @@
   padding-left: 3.5rem;
   border-radius: 2em;
 }
+.pro__check {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+.pro__cross {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
 
 .premium {
   background-color: rgb(255, 255, 255);
@@ -563,22 +596,37 @@
   padding-left: 3.5rem;
   border-radius: 2em;
 }
-
-.check {
+.premium__check {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+.premium__cross {
   padding-right: 0.7rem;
   padding-left: 0.7rem;
 }
 
-.cross {
+.pricing__web__check {
   padding-right: 0.7rem;
   padding-left: 0.7rem;
+}
+.pricing__web__cross {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__web {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .contact {
   background-color: rgb(255, 255, 255);
   border: transparent;
   margin: auto;
-  padding-top: 2.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -600,6 +648,8 @@
 
 .mail {
   padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .mail__p {
   color: rgb(165, 165, 165);
@@ -632,7 +682,8 @@
 }
 
 .form__section {
-  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .form__section__name, .form__section__email {
   color: rgb(8, 166, 228);
@@ -707,4 +758,34 @@
   left: 16rem;
   bottom: 2rem;
   padding-right: 1rem;
+}
+@media only screen and (max-width: 999px) {
+  .footer__web {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .footer__main-text {
+    display: none;
+  }
+  .footer__web {
+    color: rgb(8, 166, 228);
+    font-family: "Raleway";
+    font-size: x-large;
+    font-weight: lighter;
+    display: inline;
+    margin-left: 2rem;
+  }
+  .footer__p {
+    color: rgb(165, 165, 165);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: xx-small;
+    font-weight: 300;
+    margin-left: 2rem;
+  }
+  .footer__img {
+    display: inline-flexbox;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

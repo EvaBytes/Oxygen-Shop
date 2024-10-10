@@ -1,4 +1,5 @@
 .second__section{
+        position: relative;
         background-color: white;
         text-align: center;
         margin-top: 1rem;
@@ -28,16 +29,14 @@
 
         &__post-icon{
             position: absolute;
-            margin-top: 1.2rem;
-            margin-right: 9.2rem;
+            margin-top: 1rem;
+            margin-right: 8.5rem;
             right: 0;
 
         }
 
         &__red-dot, &__green-dot &__blue-dot{
-            position: relative;
-            margin-top: .8rem;
-            margin-bottom: 1rem;
+            margin-top: .5rem;
             margin-right: 1.4rem;
             right: 0;
             
@@ -67,6 +66,7 @@
         }
     
         @media only screen and (min-width: 1000px){
+
 
             &__main-text{
                 display: none;

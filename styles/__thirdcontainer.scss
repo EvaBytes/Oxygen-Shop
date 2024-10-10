@@ -51,6 +51,33 @@
         text-align: left;
     
     }
+
+    @media only screen and (max-width: 999px){
+        &__square-web{
+            display: none;
+    
+        }
+    
+    }
+
+    @media only screen and (min-width: 1000px){
+
+        display: flex;
+        align-items: center;
+
+        &__dot-macbook2 {
+            display: none;
+    
+        }
+
+        &__square-web{
+            position: relative;
+            margin-left: 6.5rem;
+            margin-top: -2.5rem;
+        
+        }
+
+}
 }
 
 .second__card {
@@ -97,6 +124,12 @@
         text-align: left;
     
     }
+
+    @media only screen and (min-width: 1000px){
+        display: flex;
+        align-items: center;
+    }
+
     
 }
 
@@ -130,10 +163,15 @@
         padding-right: 1.5rem;
         padding-bottom: 1rem;
         padding-left: 1.5rem;
-
     }
 
-}
+    @media only screen and (min-width: 1000px){
+        display: flex;
+        align-items: center;
+    }
+
+
+ }
 
 .trumpet{
     position: absolute;
