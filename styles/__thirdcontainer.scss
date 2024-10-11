@@ -5,6 +5,12 @@
     padding-bottom: 2rem;
     padding-left: 2rem ;
 
+    @media only screen and (min-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
 
 .first__card {
@@ -52,18 +58,19 @@
     
     }
 
-    @media only screen and (max-width: 999px){
         &__square-web{
             display: none;
     
         }
-    
-    }
-
+   
     @media only screen and (min-width: 1000px){
 
-        display: flex;
+        display: flexbox;
         align-items: center;
+        width: 85%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
 
         &__dot-macbook2 {
             display: none;
@@ -71,14 +78,24 @@
         }
 
         &__square-web{
-            position: relative;
-            margin-left: 6.5rem;
-            margin-top: -2.5rem;
+            position: flex;
         
         }
 
+        &__macbook2{
+            display: block;
+            width: 20%;
+            left:20%;
+        
+        }
+
+        &__text-macbook2{
+            width: 50%;
+
+        }
+    }
 }
-}
+
 
 .second__card {
     background-color:rgba(247, 247, 247, 1);
@@ -126,9 +143,23 @@
     }
 
     @media only screen and (min-width: 1000px){
-        display: flex;
+        display: flexbox;
         align-items: center;
+        width: 85%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+    
+
+        &__iphone{
+            position:flex;
+            width: 20%;
+
+        }
+
+
     }
+    
 
     
 }
@@ -165,28 +196,47 @@
         padding-left: 1.5rem;
     }
 
+    &__trumpet{
+        position: absolute;
+        width: 70%;
+        z-index: 1;
+        padding-top:2rem;
+        padding-left: 1.5rem;
+        
+       
+    }
+    
+    &__bg-trumpet{
+        padding-right: 1.2rem;
+        padding-bottom: 2rem;
+    
+    }
+
+
     @media only screen and (min-width: 1000px){
-        display: flex;
+        display: inline;
         align-items: center;
+        width: 50%;
+        bottom:30%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        &__trumpet{
+            display: flex;
+            width: 30%;
+        }
+
+        &__bg-trumpet{
+            display: inline;
+            width: 40%;
+        }
+
+
     }
 
 
  }
 
-.trumpet{
-    position: absolute;
-    width: 70%;
-    z-index: 1;
-    padding-top:2rem;
-    padding-left: 1.5rem;
-    
-   
-}
 
-.bg-trumpet{
-    padding-right: 2.5rem;
-    padding-bottom: 2rem;
-
-}
 
 

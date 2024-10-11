@@ -206,44 +206,39 @@
   color: rgb(31, 30, 30);
   padding: 0.8rem;
 }
-@media only screen and (max-width: 999px) {
-  .second__section__main-text-web {
-    display: none;
-  }
-}
 @media only screen and (min-width: 1000px) {
+  .second__section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
   .second__section__main-text {
     display: none;
   }
   .second__section__main-text-web {
     font-family: "Raleway";
     font-weight: 300;
-    font-size: x-large;
-    padding-top: 1rem;
+    font-size: xx-large;
+    padding-top: 3rem;
     padding-bottom: 2rem;
   }
   .second__section__icons-web {
     display: flex;
     margin-top: 2rem;
     margin-right: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     margin-left: 10rem;
     justify-content: space-around;
   }
   .second__section__person-icon {
-    display: flex;
-    left: 26.7%;
-    top: 40%;
+    left: 25.8%;
   }
   .second__section__views-icon {
-    display: flex;
-    left: 48.7%;
-    top: 44%;
+    left: 49%;
+    top: 51%;
   }
   .second__section__post-icon {
-    display: flex;
-    right: 21.7%;
-    bottom: 41.6%;
+    right: 22.7%;
+    top: 49%;
   }
 }
 
@@ -253,6 +248,13 @@
   padding-right: 2em;
   padding-bottom: 2rem;
   padding-left: 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  .third__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .first__card {
@@ -292,23 +294,30 @@
   font-size: small;
   text-align: left;
 }
-@media only screen and (max-width: 999px) {
-  .first__card__square-web {
-    display: none;
-  }
+.first__card__square-web {
+  display: none;
 }
 @media only screen and (min-width: 1000px) {
   .first__card {
-    display: flex;
+    display: flexbox;
     align-items: center;
+    width: 85%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .first__card__dot-macbook2 {
     display: none;
   }
   .first__card__square-web {
-    position: relative;
-    margin-left: 6.5rem;
-    margin-top: -2.5rem;
+    position: flex;
+  }
+  .first__card__macbook2 {
+    display: block;
+    width: 20%;
+    left: 20%;
+  }
+  .first__card__text-macbook2 {
+    width: 50%;
   }
 }
 
@@ -350,8 +359,15 @@
 }
 @media only screen and (min-width: 1000px) {
   .second__card {
-    display: flex;
+    display: flexbox;
     align-items: center;
+    width: 85%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .second__card__iphone {
+    position: flex;
+    width: 20%;
   }
 }
 
@@ -382,24 +398,34 @@
   padding-bottom: 1rem;
   padding-left: 1.5rem;
 }
-@media only screen and (min-width: 1000px) {
-  .third__card {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.trumpet {
+.third__card__trumpet {
   position: absolute;
   width: 70%;
   z-index: 1;
   padding-top: 2rem;
   padding-left: 1.5rem;
 }
-
-.bg-trumpet {
-  padding-right: 2.5rem;
+.third__card__bg-trumpet {
+  padding-right: 1.2rem;
   padding-bottom: 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  .third__card {
+    display: inline;
+    align-items: center;
+    width: 50%;
+    bottom: 30%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .third__card__trumpet {
+    display: flex;
+    width: 30%;
+  }
+  .third__card__bg-trumpet {
+    display: inline;
+    width: 40%;
+  }
 }
 
 .pricing__section {
@@ -615,7 +641,7 @@
   border-radius: 2em;
 }
 .premium__check {
-  padding-right: 0.7rem;
+  padding-right: 1rem;
   padding-left: 0.7rem;
 }
 .premium__cross {
@@ -623,19 +649,10 @@
   padding-left: 0.7rem;
 }
 
-.pricing__web__check {
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-}
-.pricing__web__cross {
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-}
 @media only screen and (min-width: 1000px) {
   .pricing__web {
-    padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -646,7 +663,6 @@
   padding-right: 2rem;
   padding-left: 2rem;
   padding-bottom: 2rem;
-  text-align: center;
 }
 .contact__main-text {
   font-family: "Raleway";
@@ -667,7 +683,7 @@
 .mail {
   padding-bottom: 2rem;
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-top: 2rem;
 }
 .mail__p {
   color: rgb(165, 165, 165);
@@ -684,7 +700,7 @@
 
 .phone {
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 1rem;
 }
 .phone__p {
   color: rgb(165, 165, 165);
@@ -700,8 +716,8 @@
 }
 
 .form__section {
-  padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 2rem;
 }
 .form__section__name, .form__section__email {
   color: rgb(8, 166, 228);
@@ -771,16 +787,14 @@
   font-size: smaller;
   font-weight: 300;
 }
-.footer__img {
+.footer__img1, .footer__img2 {
   position: relative;
   left: 16rem;
   bottom: 2rem;
   padding-right: 1rem;
 }
-@media only screen and (max-width: 999px) {
-  .footer__web {
-    display: none;
-  }
+.footer__web {
+  display: none;
 }
 @media only screen and (min-width: 1000px) {
   .footer__main-text {
@@ -801,9 +815,7 @@
     font-weight: 300;
     margin-left: 2rem;
   }
-  .footer__img {
-    display: inline-flexbox;
-    justify-content: flex-end;
-    margin-right: 1rem;
+  .footer__images {
+    padding-left: 70%;
   }
 }/*# sourceMappingURL=styles.css.map */

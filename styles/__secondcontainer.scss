@@ -54,14 +54,12 @@
             
         }
 
-        @media only screen and (max-width: 999px){
-            &__main-text-web{
-                display: none;
-            }
-    
-        }
     
         @media only screen and (min-width: 1000px){
+
+            padding-left: 3rem;
+            padding-right: 3rem;
+
 
        
             &__main-text{
@@ -71,8 +69,8 @@
             &__main-text-web{
                 font-family: "Raleway";
                 font-weight:300;
-                font-size: x-large;
-                padding-top: 1rem;
+                font-size: xx-large;
+                padding-top: 3rem;
                 padding-bottom: 2rem;
             }
 
@@ -80,32 +78,30 @@
                 display: flex;
                 margin-top: 2rem;
                 margin-right: 10rem;
-                margin-bottom: 2rem;
+                margin-bottom: 4rem;
                 margin-left:10rem;
-                justify-content: space-around;    
+                justify-content: space-around; 
+
 
             }
 
             &__person-icon{
-                display: flex;
-                left: 26.7%;
-                top:40%;
-     
+                left: 25.8%;
+
             }
     
             &__views-icon{
-                display: flex;
-                left: 48.7%;
-                top:44%;
+                left: 49%;
+                top:51%;
+             
     
             }
     
     
             &__post-icon{
-                display: flex;
-                right:21.7%;
-                bottom: 41.6%;
-    
+                right:22.7%;
+                top:49%;
+             
     
             }
 

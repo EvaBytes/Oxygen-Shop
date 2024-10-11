@@ -96,6 +96,7 @@
     
         }
 
+        
 }
 
 
@@ -248,7 +249,7 @@
         
     }
     &__check{
-        padding-right: .7rem;
+        padding-right: 1rem;
         padding-left: .7rem;
 
     }
@@ -262,33 +263,13 @@
 
 .pricing__web{
 
-    &__check{
-        padding-right: .7rem;
-        padding-left: .7rem;
-
-    }
-
-    &__cross{
-        padding-right: .7rem;
-        padding-left: .7rem;
-
-    }
-
-
-    @media only screen and (max-width: 999px){
-
-
-
-    }
-
     @media only screen and (min-width: 1000px){
-        padding: 2rem;
         display: flex;
-        justify-content: space-around;
+
+        justify-content: space-between;
 
 
     }
-    
 
 }
 

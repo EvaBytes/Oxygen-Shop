@@ -6,7 +6,7 @@
     padding-right: 2rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
-    text-align: center;
+
 
     &__main-text{
         font-family: "Raleway";
@@ -31,7 +31,7 @@
 .mail{
     padding-bottom: 2rem;
     padding-right: 2rem;
-    padding-left: 2rem;
+    padding-top: 2rem;
 
     &__p{
         color: rgba(165, 165, 165, 1);
@@ -52,7 +52,7 @@
 
 .phone{
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 1rem;
 
     &__p{
         color: rgba(165, 165, 165, 1);
@@ -72,8 +72,8 @@
 }
 
 .form__section{
-    padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 2rem;
 
     &__name, &__email{
         color:rgba(8, 166, 228, 1);
