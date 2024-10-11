@@ -178,26 +178,20 @@
 }
 .second__section__person-icon {
   position: absolute;
-  margin-top: 1rem;
-  margin-right: 9.8rem;
-  right: 0;
+  right: 39%;
 }
 .second__section__views-icon {
   position: absolute;
-  margin-top: 1.6rem;
-  margin-right: 8.95rem;
-  right: 0;
+  right: 35%;
+  top: 48.5%;
 }
 .second__section__post-icon {
   position: absolute;
-  margin-top: 1rem;
-  margin-right: 8.5rem;
-  right: 0;
+  right: 37%;
+  bottom: 19%;
 }
 .second__section__red-dot, .second__section__green-dot .second__section__blue-dot {
-  margin-top: 0.5rem;
-  margin-right: 1.4rem;
-  right: 0;
+  right: 45%;
 }
 .second__section__entries-number, .second__section__views-number, .second__section__post-number {
   font-family: "Raleway";
@@ -209,7 +203,7 @@
   font-family: "Raleway";
   font-weight: 100;
   font-size: medium;
-  color: rgb(247, 247, 247);
+  color: rgb(31, 30, 30);
   padding: 0.8rem;
 }
 @media only screen and (max-width: 999px) {
@@ -224,8 +218,32 @@
   .second__section__main-text-web {
     font-family: "Raleway";
     font-weight: 300;
-    font-size: xx-large;
+    font-size: x-large;
+    padding-top: 1rem;
     padding-bottom: 2rem;
+  }
+  .second__section__icons-web {
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    justify-content: space-around;
+  }
+  .second__section__person-icon {
+    display: flex;
+    left: 26.7%;
+    top: 40%;
+  }
+  .second__section__views-icon {
+    display: flex;
+    left: 48.7%;
+    top: 44%;
+  }
+  .second__section__post-icon {
+    display: flex;
+    right: 21.7%;
+    bottom: 41.6%;
   }
 }
 
