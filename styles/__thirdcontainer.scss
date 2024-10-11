@@ -83,9 +83,9 @@
         }
 
         &__macbook2{
-            display: block;
+            display: absolute;
+            right: 10%;
             width: 20%;
-            left:20%;
         
         }
 
@@ -144,7 +144,7 @@
 
     @media only screen and (min-width: 1000px){
         display: flexbox;
-        align-items: center;
+        align-content: space-evenly;
         width: 85%;
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -152,7 +152,8 @@
     
 
         &__iphone{
-            position:flex;
+            position: absolute;
+            right: 10%;
             width: 20%;
 
         }
@@ -222,8 +223,10 @@
         padding-bottom: 3rem;
 
         &__trumpet{
-            display: flex;
+            display: absolute;
+            right: 10%;
             width: 30%;
+            
         }
 
         &__bg-trumpet{

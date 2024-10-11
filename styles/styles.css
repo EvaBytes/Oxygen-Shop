@@ -312,9 +312,9 @@
     position: flex;
   }
   .first__card__macbook2 {
-    display: block;
+    display: absolute;
+    right: 10%;
     width: 20%;
-    left: 20%;
   }
   .first__card__text-macbook2 {
     width: 50%;
@@ -360,13 +360,14 @@
 @media only screen and (min-width: 1000px) {
   .second__card {
     display: flexbox;
-    align-items: center;
+    align-content: space-evenly;
     width: 85%;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
   .second__card__iphone {
-    position: flex;
+    position: absolute;
+    right: 10%;
     width: 20%;
   }
 }
@@ -419,7 +420,8 @@
     padding-bottom: 3rem;
   }
   .third__card__trumpet {
-    display: flex;
+    display: absolute;
+    right: 10%;
     width: 30%;
   }
   .third__card__bg-trumpet {
@@ -679,6 +681,11 @@
   margin-bottom: 1rem;
   position: relative;
 }
+@media only screen and (min-width: 1000px) {
+  .contact {
+    width: 70%;
+  }
+}
 
 .mail {
   padding-bottom: 2rem;
@@ -748,6 +755,11 @@
   position: relative;
   bottom: 1.5rem;
   padding-left: 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  .form__section {
+    display: flexbox;
+  }
 }
 
 .send__button {
