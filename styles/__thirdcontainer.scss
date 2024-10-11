@@ -85,7 +85,7 @@
         &__macbook2{
             display: absolute;
             right: 10%;
-            width: 20%;
+            width: 15%;
         
         }
 
@@ -143,19 +143,27 @@
     }
 
     @media only screen and (min-width: 1000px){
-        display: flexbox;
-        align-content: space-evenly;
+        display: flex;
+        align-content: space-between;
         width: 85%;
         padding-top: 4rem;
+        padding-right:2rem ;
         padding-bottom: 4rem;
 
     
 
         &__iphone{
             position: absolute;
-            right: 10%;
+            left: 10%;
             width: 20%;
 
+        }
+
+        &__dot-iphone{
+            position: relative;
+            width: 90%;
+            left: 10%;
+    
         }
 
 
@@ -173,6 +181,7 @@
     margin: auto;
     border-radius: .4rem;
     text-align: center;
+
 
 
     &__text-trumpet{
@@ -225,11 +234,12 @@
         &__trumpet{
             display: absolute;
             right: 10%;
-            width: 30%;
+            width: 20%;
             
         }
 
         &__bg-trumpet{
+            position:relative;
             display: inline;
             width: 40%;
         }
