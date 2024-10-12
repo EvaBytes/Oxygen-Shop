@@ -8,7 +8,7 @@
     @media only screen and (min-width: 1000px){
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        padding-top: 4rem;
     }
 
 }
@@ -65,9 +65,7 @@
    
     @media only screen and (min-width: 1000px){
 
-        display: flexbox;
-        align-items: center;
-        width: 85%;
+        display: flex;
         padding-top: 4rem;
         padding-bottom: 4rem;
 
@@ -77,8 +75,15 @@
     
         }
 
+        &__img{
+            display:flex;
+
+        }
+
         &__square-web{
-            position: flex;
+            display:block;
+            align-content:end;
+            z-index: 1;
         
         }
 
@@ -89,7 +94,9 @@
         
         }
 
-        &__text-macbook2{
+        &__text{
+            display: flex;
+            justify-content: space-around;
             width: 50%;
 
         }
@@ -104,15 +111,15 @@
     margin-bottom: 3rem;
     padding-top: 2.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 2rem;
     padding-left: 1.5rem;
+    padding-bottom: 2rem;
     border-radius: .4rem;
     text-align: center;
 
 
     &__iphone{
         position: absolute;
-        width: 50%;
+        width: 45%;
         z-index: 1;
 
     }
@@ -124,13 +131,16 @@
 
     }
 
+    &__second__card__text{
+        padding: .5rem;
+    }
+
     &__text-iphone {
         font-family: "Raleway";
         font-size: xx-large;
         font-weight:300;
         text-align: left;
-        padding-top: 2rem;
-        padding-bottom: 1.2rem;
+        margin-top: 1rem;
     
     }
 
@@ -139,31 +149,40 @@
         font-weight: 200;
         font-size: small;
         text-align: left;
+        margin-top: 1rem;
     
     }
 
     @media only screen and (min-width: 1000px){
-        display: flex;
-        align-content: space-between;
-        width: 85%;
-        padding-top: 4rem;
-        padding-right:2rem ;
-        padding-bottom: 4rem;
 
-    
+        display: flex;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         &__iphone{
             position: absolute;
-            left: 10%;
-            width: 20%;
+            width: 30%;
 
         }
 
         &__dot-iphone{
-            position: relative;
-            width: 90%;
+            position: absolute;
+            width: 10%;
             left: 10%;
+            z-index: 1;
     
+        }
+
+        &__text{
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+
+        }
+
+        &__img{
+            display: flex;
+
         }
 
 
@@ -193,6 +212,8 @@
         padding-right: 1.5rem;
         padding-bottom: 1rem;
         padding-left: 1.5rem;
+        margin: block;
+
 
     }
 
@@ -224,16 +245,16 @@
 
 
     @media only screen and (min-width: 1000px){
-        display: inline;
+        display: flex;
         align-items: center;
         width: 50%;
         bottom:30%;
+        margin:block;
         padding-top: 3rem;
         padding-bottom: 3rem;
 
         &__trumpet{
-            display: absolute;
-            right: 10%;
+            position:relative;
             width: 20%;
             
         }

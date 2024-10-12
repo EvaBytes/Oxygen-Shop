@@ -24,12 +24,10 @@
 
         }
 
-
         &__post-icon{
             position: absolute;
             right:37%;
             bottom: 19%;
-
 
         }
 
@@ -54,19 +52,21 @@
             
         }
 
+        &__text-web{
+            display:none;
+            
+        }
+
     
         @media only screen and (min-width: 1000px){
 
             padding-left: 3rem;
             padding-right: 3rem;
 
-
        
-            &__main-text{
-                display: none;
-            }
-
-            &__main-text-web{
+            &__text-web{
+                display: inline-flex;
+                align-items: center;
                 font-family: "Raleway";
                 font-weight:300;
                 font-size: xx-large;
@@ -74,9 +74,14 @@
                 padding-bottom: 2rem;
             }
 
+            &__main-text{
+                display: none;
+            }
+
+
             &__icons-web{
                 display: flex;
-                margin-top: 2rem;
+                margin-top: 3rem;
                 margin-right: 10rem;
                 margin-bottom: 4rem;
                 margin-left:10rem;
@@ -86,29 +91,28 @@
             }
 
             &__person-icon{
-                left: 25.8%;
+                left: 26%;
+                top:50.5%;
 
             }
     
             &__views-icon{
                 left: 49%;
-                top:51%;
-             
+                top:53%;
     
             }
     
     
             &__post-icon{
                 right:22.7%;
-                top:49%;
-             
-    
+                top:51.5%;
+            
             }
 
 
 
 
-        }
+    }
 
 }
 

@@ -33,7 +33,7 @@
 
 
 .mail{
-    padding-bottom: 2rem;
+    padding-bottom: .5rem;
     padding-right: 2rem;
     padding-top: 2rem;
 
@@ -55,7 +55,6 @@
 }
 
 .phone{
-    padding-left: 2rem;
     padding-top: 1rem;
 
     &__p{
@@ -77,7 +76,7 @@
 
 .form__section{
     padding-right: 2rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
 
     &__name, &__email{
         color:rgba(8, 166, 228, 1);
@@ -137,4 +136,12 @@
     box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
     font-size:large;
     font-weight:500;
+
+    @media only screen and (min-width: 1000px){
+        padding-top: 1.2rem;
+        padding-right: 6.5rem;
+        padding-bottom: 1.2rem;
+        padding-left: 6.5rem;
+        margin-left: 12rem;
+    }
 }
