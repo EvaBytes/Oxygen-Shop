@@ -455,9 +455,9 @@
 
 .pricing__section {
   padding-top: 2rem;
-  padding-right: 2rem;
+  padding-right: 5rem;
   padding-bottom: 1rem;
-  padding-left: 2rem;
+  padding-left: 5rem;
 }
 .pricing__section__header {
   font-size: xx-large;
@@ -466,6 +466,11 @@
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .pricing__section__header {
+    padding-bottom: 2rem;
+  }
 }
 
 .basic {
@@ -538,16 +543,18 @@
   .basic {
     display: flex;
     flex-direction: column;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     align-items: center;
   }
   .basic__list {
+    padding-top: 2rem;
     display: block;
     justify-content: space-between;
     position: inherit;
+    line-height: 2.5rem;
   }
   .basic__price {
     top: auto;
@@ -555,6 +562,12 @@
   }
   .basic__text {
     top: auto;
+    padding: 1rem;
+    text-align: center;
+    position: static;
+  }
+  .basic__pricing-button {
+    top: 3.7rem;
   }
 }
 
@@ -636,22 +649,37 @@
   .pro {
     display: flex;
     flex-direction: column;
-    padding-right: 4rem;
-    padding-left: 4rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-right: 7rem;
+    padding-left: 7rem;
+    margin-bottom: 2rem;
     align-items: center;
   }
   .pro__list {
+    padding-top: 2rem;
     display: block;
     justify-content: space-between;
     position: inherit;
+    line-height: 2.5rem;
   }
   .pro__price {
     top: auto;
+    position: inherit;
+    left: 50%;
   }
   .pro__text {
     top: auto;
+    right: 2.5rem;
+    padding: 1rem;
+  }
+  .pro__limited-offer {
+    top: auto;
+    width: 100%;
+    padding-top: 1rem;
+    left: 2.5rem;
+  }
+  .pro__button {
+    top: 1.6rem;
   }
 }
 
@@ -722,29 +750,39 @@
   .premium {
     display: flex;
     flex-direction: column;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    margin-bottom: 2rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     align-items: center;
   }
   .premium__list {
+    padding-top: 2rem;
     display: block;
     justify-content: space-between;
     position: inherit;
+    line-height: 2.5rem;
   }
   .premium__price {
     top: auto;
+    right: 1rem;
   }
   .premium__text {
     top: auto;
+    right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .premium__button {
+    top: 3.7rem;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .pricing__web {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 }
 

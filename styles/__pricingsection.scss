@@ -1,8 +1,8 @@
 .pricing__section{
     padding-top: 2rem;
-    padding-right: 2rem;
+    padding-right: 5rem;
     padding-bottom: 1rem;
-    padding-left: 2rem;
+    padding-left: 5rem;
 
     &__header{
         font-size: xx-large;
@@ -11,6 +11,11 @@
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
+
+        @media only screen and (min-width: 1000px){
+            padding-bottom: 2rem;
+        }
+
     
     }
 
@@ -100,17 +105,18 @@
     @media only screen and (min-width: 1000px){
         display: flex;
         flex-direction: column;
-        padding-right: 4rem;
-        padding-left: 4rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
         align-items: center;
 
         &__list{
-
+            padding-top: 2rem;
             display: block;
             justify-content: space-between;
             position:inherit;
+            line-height: 2.5rem;
 
         }
 
@@ -122,6 +128,16 @@
 
         &__text{
             top:auto;
+            padding: 1rem;
+            text-align: center;
+            position: static;
+
+
+        }
+
+        &__pricing-button{
+            top: 3.7rem;
+
 
         }
     }
@@ -221,29 +237,48 @@
     @media only screen and (min-width: 1000px){
         display: flex;
         flex-direction: column;
-        padding-right: 4rem;
-        padding-left: 4rem;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-right: 7rem;
+        padding-left: 7rem;
+        margin-bottom: 2rem;
         align-items: center;
 
         &__list{
-
+            padding-top: 2rem;
             display: block;
             justify-content: space-between;
             position:inherit;
+            line-height: 2.5rem;
 
         }
 
         &__price{
             top:auto;
+            position:inherit;
+            left: 50%;
 
         }
 
         &__text{
             top:auto;
+            right: 2.5rem;
+            padding: 1rem;
 
         }
+
+        &__limited-offer{
+            top: auto;
+            width: 100%;
+            padding-top: 1rem;
+            left:2.5rem;
+        }
+
+        &__button{
+            top: 1.6rem;
+
+
+        }
+
     }
 }
 
@@ -325,30 +360,47 @@
     @media only screen and (min-width: 1000px){
         display: flex;
         flex-direction: column;
-        padding-right: 4rem;
-        padding-left: 4rem;
+        margin-bottom: 2rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
         align-items: center;
 
 
         &__list{
-
+            padding-top: 2rem;
             display: block;
             justify-content: space-between;
             position:inherit;
+            line-height: 2.5rem;
 
         }
 
         &__price{
             top:auto;
+            right: 1rem;     
 
         }
 
         &__text{
             top:auto;
+            right: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+    
+
 
         }
+
+        &__button{
+            top: 3.7rem;
+
+
+        }
+
+
     }
 }
 
@@ -356,8 +408,7 @@
 
     @media only screen and (min-width: 1000px){
         display: flex;
-        justify-content: space-between;
-
+        align-items: center;
 
     }
 
