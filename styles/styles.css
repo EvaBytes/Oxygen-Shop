@@ -77,7 +77,6 @@
   }
   .navbar__ul-li {
     padding: 0 0.5em 0.25em;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: 0.3s;
@@ -454,9 +453,9 @@
 }
 
 .pricing__section {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-right: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   padding-left: 2rem;
 }
 .pricing__section__header {
@@ -468,12 +467,15 @@
   padding-bottom: 1rem;
 }
 @media only screen and (min-width: 1000px) {
-  .pricing__section__header {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
+  .pricing__section {
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
+}
+.pricing__section__header {
+  margin-bottom: 2rem;
 }
 
 .basic {
@@ -667,7 +669,6 @@
     line-height: 2.5rem;
   }
   .pro__price {
-    font-weight: 400;
     top: auto;
     position: inherit;
     left: 50%;
@@ -788,7 +789,7 @@
   .pricing__web {
     display: flex;
     align-items: center;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
   }
 }
 
@@ -819,8 +820,22 @@
   .contact {
     width: 80%;
     display: flex;
-    padding-left: 7rem;
+    padding-left: 6rem;
     padding-right: 7rem;
+  }
+  .contact__main-text {
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 1rem;
+  }
+  .contact__p {
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .web {
+    margin-left: 4rem;
   }
 }
 
@@ -841,6 +856,17 @@
   position: relative;
   top: 0.5rem;
 }
+@media only screen and (min-width: 1000px) {
+  .mail {
+    display: inline;
+  }
+  .mail__p {
+    font-size: small;
+  }
+  .mail__image {
+    width: 7%;
+  }
+}
 
 .phone {
   padding-top: 1rem;
@@ -856,6 +882,17 @@
 .phone__image {
   position: relative;
   top: 0.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  .phone {
+    display: inline;
+  }
+  .phone__p {
+    font-size: small;
+  }
+  .phone__image {
+    width: 7%;
+  }
 }
 
 .form__section {
@@ -880,7 +917,7 @@
 .form__section__checkbox {
   display: block;
   margin-top: 2rem;
-  width: 5%;
+  width: 15px;
 }
 .form__section__consentment {
   color: rgb(112, 112, 112);
@@ -895,7 +932,17 @@
 @media only screen and (min-width: 1000px) {
   .form__section {
     width: 50%;
-    margin-left: 5rem;
+    padding-top: 0.5rem;
+    margin-left: 6rem;
+  }
+  .form__section__name, .form__section__email {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+  .form__section__checkbox {
+    width: 20px;
+    height: 20px;
   }
 }
 

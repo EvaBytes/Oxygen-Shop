@@ -1,7 +1,7 @@
 .pricing__section{
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-right: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     padding-left: 2rem;
 
     &__header{
@@ -11,18 +11,20 @@
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
-
-        @media only screen and (min-width: 1000px){
-            padding-bottom: 2rem;
-            padding-top: 2rem;
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-
-    
     }
 
-}
+    @media only screen and (min-width: 1000px){
+            padding-bottom: 3rem;
+            padding-top: 6rem;
+            padding-right: 6rem;
+            padding-left: 6rem;
+        }
+
+        &__header{
+            margin-bottom: 2rem;
+        }
+
+    }
 
 
 
@@ -257,7 +259,6 @@
         }
 
         &__price{
-            font-weight: 400;
             top:auto;
             position:inherit;
             left: 50%;
@@ -414,7 +415,7 @@
     @media only screen and (min-width: 1000px){
         display: flex;
         align-items: center;
-        padding-bottom: 5rem;
+        padding-bottom: 7rem;
 
     }
 

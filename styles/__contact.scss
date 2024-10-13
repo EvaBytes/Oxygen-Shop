@@ -29,11 +29,28 @@
     @media only screen and (min-width: 1000px){
         width: 80%;
         display: flex;
-        padding-left: 7rem;
+        padding-left: 6rem;
         padding-right: 7rem;
 
+        &__main-text{
+            font-size: 45px;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+
+        &__p{
+            font-size: small;
+
+        }
+    } 
+}
+
+.web{
+    @media only screen and (min-width: 1000px){
+        margin-left: 4rem;
     }
 }
+ 
 
 
 .mail{
@@ -56,6 +73,17 @@
         top:.5rem;
     
     }
+
+    @media only screen and (min-width: 1000px){
+        display: inline;
+        &__p{
+            font-size: small;
+        }
+        
+        &__image {
+            width: 7%;
+        }
+    }
 }
 
 .phone{
@@ -75,6 +103,19 @@
         position:relative;
         top:.5rem;
     
+    }
+
+    @media only screen and (min-width: 1000px){
+        display: inline;
+
+        &__p{
+        font-size: small;
+        }
+
+        &__image {
+            width: 7%;
+        }
+
     }
 }
 
@@ -105,8 +146,10 @@
     &__checkbox{
         display: block;
         margin-top: 2rem;
-        width: 5%;
+        width: 15px;
+
     }
+
 
     &__consentment{
         color: rgba(112, 112, 112, 1);
@@ -122,7 +165,20 @@
 
     @media only screen and (min-width: 1000px){
         width: 50%;
-        margin-left: 5rem;
+        padding-top: .5rem;
+        margin-left: 6rem;
+
+        &__name, &__email{
+            font-size:  10px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+        }
+
+        &__checkbox{
+            width: 20px;
+            height: 20px;
+
+        }
     }
 }
 
