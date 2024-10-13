@@ -455,9 +455,9 @@
 
 .pricing__section {
   padding-top: 2rem;
-  padding-right: 5rem;
+  padding-right: 2rem;
   padding-bottom: 1rem;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 .pricing__section__header {
   font-size: xx-large;
@@ -470,6 +470,9 @@
 @media only screen and (min-width: 1000px) {
   .pricing__section__header {
     padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 }
 
@@ -480,8 +483,7 @@
   border-width: 0.1rem;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 2rem;
-  padding-right: 2rem;
+  margin-bottom: 3rem;
   padding-left: 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -512,7 +514,7 @@
   text-align: justify;
   display: inline-block;
   position: relative;
-  left: 4rem;
+  left: 3rem;
   bottom: 1rem;
   justify-content: left;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -521,6 +523,7 @@
 .basic__pricing-button {
   position: relative;
   top: 1.5rem;
+  right: 1rem;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: rgb(251, 59, 100);
@@ -547,6 +550,7 @@
     padding-left: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
     align-items: center;
   }
   .basic__list {
