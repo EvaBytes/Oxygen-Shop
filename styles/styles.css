@@ -244,22 +244,25 @@
 }
 
 .third__section {
-  background-color: rgb(232, 233, 237);
-  padding-top: 3rem;
-  padding-right: 2em;
-  padding-bottom: 2rem;
+  background-color: rgb(247, 247, 247);
+  padding-top: 4rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
   padding-left: 2rem;
 }
 @media only screen and (min-width: 1000px) {
   .third__section {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 6rem;
+    padding-right: 12em;
+    padding-bottom: 2rem;
+    padding-left: 12rem;
   }
 }
 
 .first__card {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   border-color: rgb(232, 233, 237);
   margin: auto;
   margin-bottom: 3rem;
@@ -277,7 +280,6 @@
   margin-left: 1.5rem;
 }
 .first__card__dot-macbook2 {
-  position: relative;
   margin-left: 6.5rem;
   margin-top: -2.5rem;
 }
@@ -301,34 +303,49 @@
 @media only screen and (min-width: 1000px) {
   .first__card {
     display: flex;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
   .first__card__dot-macbook2 {
     display: none;
   }
   .first__card__img {
-    display: flex;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+    width: 30%;
   }
   .first__card__square-web {
-    display: block;
-    align-content: end;
-    z-index: 1;
+    display: initial;
+    width: 60%;
+    left: 7rem;
   }
   .first__card__macbook2 {
-    display: absolute;
-    right: 10%;
-    width: 15%;
+    position: absolute;
+    width: 20%;
+    right: 22%;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
   }
   .first__card__text {
     display: flex;
-    justify-content: space-around;
+    text-align: end;
+    flex-flow: column;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    width: 70%;
+  }
+  .first__card__p-macbook2 {
     width: 50%;
+    border-bottom: 4px solid rgb(251, 59, 100);
+    padding-bottom: 3rem;
   }
 }
 
 .second__card {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   border-color: rgb(232, 233, 237);
   margin: auto;
   margin-bottom: 3rem;
@@ -366,34 +383,57 @@
   text-align: left;
   margin-top: 1rem;
 }
+.second__card__iphone-web {
+  display: none;
+}
 @media only screen and (min-width: 1000px) {
   .second__card {
     display: flex;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    margin: 0;
+    padding-top: 1rem;
   }
   .second__card__iphone {
-    position: absolute;
-    width: 30%;
-  }
-  .second__card__dot-iphone {
-    position: absolute;
-    width: 10%;
-    left: 10%;
-    z-index: 1;
-  }
-  .second__card__text {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
+    display: none;
   }
   .second__card__img {
     display: flex;
+    width: 30%;
+    margin-right: 25%;
+  }
+  .second__card__iphone-web {
+    display: inherit;
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    width: 18%;
+    z-index: 1;
+  }
+  .second__card__dot-iphone {
+    margin-left: 3rem;
+    margin-right: 10rem;
+  }
+  .second__card__text {
+    display: flex;
+    flex-flow: column;
+    text-align: end;
+    padding-bottom: 2rem;
+    padding-left: 7rem;
+    width: 60%;
+  }
+  .second__card__text-iphone {
+    font-size: x-large;
+    width: 50%;
+  }
+  .second__card__p-iphone {
+    font-size: x-small;
+    border-bottom: 4px solid rgb(8, 166, 228);
+    padding-bottom: 2.5rem;
+    width: 80%;
   }
 }
 
 .third__card {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   border-color: rgb(232, 233, 237);
   padding-right: 2.9rem;
   margin: auto;
@@ -433,22 +473,35 @@
 }
 @media only screen and (min-width: 1000px) {
   .third__card {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    bottom: 30%;
-    margin: block;
+    display: inline-flex;
+    flex-direction: row;
+    width: 60%;
+    margin-top: 2.5rem;
     padding-top: 3rem;
+    padding-left: 2rem;
     padding-bottom: 3rem;
+  }
+  .third__card__text-web {
+    flex-flow: column;
+    padding-bottom: 2rem;
+    width: 60%;
+    text-align: center;
+  }
+  .third__card__p-trumpet {
+    border-bottom: 4px solid rgb(85, 223, 180);
+    padding-bottom: 3rem;
+    width: 70%;
+    text-align: left;
+  }
+  .third__card__img {
+    width: 50%;
   }
   .third__card__trumpet {
     position: relative;
-    width: 20%;
+    width: 50%;
   }
   .third__card__bg-trumpet {
-    position: relative;
-    display: inline;
-    width: 40%;
+    position: absolute;
   }
 }
 
@@ -830,6 +883,7 @@
   }
   .contact__p {
     font-size: small;
+    padding-bottom: 2rem;
   }
 }
 
@@ -842,7 +896,6 @@
 .mail {
   padding-bottom: 0.5rem;
   padding-right: 2rem;
-  padding-top: 2rem;
 }
 .mail__p {
   color: rgb(165, 165, 165);
@@ -869,7 +922,7 @@
 }
 
 .phone {
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 .phone__p {
   color: rgb(165, 165, 165);
