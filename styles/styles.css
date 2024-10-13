@@ -663,6 +663,7 @@
     line-height: 2.5rem;
   }
   .pro__price {
+    font-weight: 400;
     top: auto;
     position: inherit;
     left: 50%;
@@ -783,6 +784,7 @@
   .pricing__web {
     display: flex;
     align-items: center;
+    padding-bottom: 5rem;
   }
 }
 
@@ -811,7 +813,10 @@
 }
 @media only screen and (min-width: 1000px) {
   .contact {
-    width: 70%;
+    width: 80%;
+    display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 
@@ -885,7 +890,8 @@
 }
 @media only screen and (min-width: 1000px) {
   .form__section {
-    display: flexbox;
+    width: 50%;
+    margin-left: 5rem;
   }
 }
 

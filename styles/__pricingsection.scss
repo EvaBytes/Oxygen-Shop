@@ -253,6 +253,7 @@
         }
 
         &__price{
+            font-weight: 400;
             top:auto;
             position:inherit;
             left: 50%;
@@ -409,6 +410,7 @@
     @media only screen and (min-width: 1000px){
         display: flex;
         align-items: center;
+        padding-bottom: 5rem;
 
     }
 
