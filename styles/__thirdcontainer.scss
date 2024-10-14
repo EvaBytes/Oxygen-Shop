@@ -6,8 +6,6 @@
     padding-left: 2rem ;
 
     @media only screen and (min-width: 1000px){
-        display: flex;
-        flex-direction: column;
         padding-top: 6rem;
         padding-right: 12em;
         padding-bottom: 2rem;
@@ -248,7 +246,6 @@
     background-color:rgba(255, 255, 255, 1);
     border-color:rgba(232, 233, 237, 1);
     padding-right: 2.9rem;
-    margin: auto;
     border-radius: .4rem;
     text-align: center;
 
@@ -276,61 +273,74 @@
         padding-left: 1.5rem;
     }
 
+
+
     &__trumpet{
-        position: absolute;
-        width: 70%;
+        position: relative;
+        width: 85%;
+        top: 2rem;   
         z-index: 1;
-        padding-top:2rem;
-        padding-left: 1.5rem;   
-       
+           
     }
-    
+        
     &__bg-trumpet{
-        padding-right: 1.2rem;
-        padding-bottom: 2rem;
-    
+        position: absolute;
+        right:2rem
+
+        
     }
+    
 
 
     @media only screen and (min-width: 1000px){
         display:inline-flex;
-        flex-direction: row;
+        justify-content: space-between;
         width: 60%;
-        margin-top:2.5rem;
-        padding-top: 3rem;
+        margin-right: -2rem;
+        margin-top:1.5rem;
+        margin-bottom: 3.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         padding-left: 2rem;
+       
+
+
+    &__text-web{
+        justify-content: start;
+        width: 65%;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+
+    &__p-trumpet{
+        border-bottom: 4px solid rgba(85, 223, 180, 1);
         padding-bottom: 3rem;
-
-
-        &__text-web{
-            flex-flow:column;
-            padding-bottom: 2rem;
-            width: 60%;
-            text-align: center;
-        }
-
-        &__p-trumpet{
-            border-bottom: 4px solid rgba(85, 223, 180, 1);
-            padding-bottom: 3rem;
-            width: 70%;
-            text-align: left;
+        text-align: left;
         
-        }
+    }
 
-        &__img{
-            width: 50%;
-        }
+    &__img{
+        display: inline-flex;
+
+    }
         
 
-        &__trumpet{
-            position:relative;
-            width: 50%;
+    &__trumpet{
+        width: 70%;
+        left: 10rem;
+        top:10rem
             
-        }
+    }
 
-        &__bg-trumpet{
-            position:absolute;
-        }
+    &__bg-trumpet{
+        width: 25%;
+        height:40%;
+        margin-top: 4.3rem;
+        margin-right: 10rem;
+   
+
+    }
 
 
     }
