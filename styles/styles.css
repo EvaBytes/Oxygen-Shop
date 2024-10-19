@@ -466,6 +466,7 @@
 }
 .third__card__bg-trumpet {
   position: absolute;
+  width: 84%;
   right: 2rem;
 }
 @media only screen and (min-width: 1000px) {
