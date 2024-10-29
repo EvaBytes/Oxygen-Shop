@@ -20,10 +20,17 @@
         <h1 class="navbar__logo">OXYGENShop</h1>
         <h1 class="navbar__logo-web">OXYGEN Shop</h1>
     
-        <button id="hamburger">
+        <button id="hamburger" class="navbar__menu-img">
             <img src="images/Menu.png" alt="Menu Icon">
         </button>
         
+        <ul class="navbar__mobile-menu" id="mobileMenu">
+            <li class="navbar__menu-item">Why Us</li>
+            <li class="navbar__menu-item">Benefits</li>
+            <li class="navbar__menu-item">Prices</li>
+            <li class="navbar__menu-item">Contact</li>
+        </ul>
+
         <ul class="navbar__web-menu">
             <li class="navbar__menu-item">WHY US</li>
             <li class="navbar__menu-item">BENEFITS</li>
@@ -118,8 +125,8 @@
         <section class="pricing__section">
             <h1 class="pricing__section__header">Pricing</h1>
 
-            <label for="currency-selector">Select Currency:</label>
-            <select id="currency-selector">
+            <label class = currency-selector for="currency-selector">Select Currency:</label>
+            <select class="currency-selector" id="currency-selector">
                 <option value="usd">USD</option>
                 <option value="eur">EUR</option>
                 <option value="gbp">GBP</option>
