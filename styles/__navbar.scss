@@ -73,6 +73,10 @@
             color: grey;
             }
 
+        &__menu-item{
+            padding-right: 2rem;
+        }
+
         &__ul-li {
             padding: 0 .5em .25em;
             position: relative;
@@ -89,6 +93,4 @@
     }
     
 
-}  
-
-
+}

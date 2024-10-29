@@ -75,6 +75,9 @@
     letter-spacing: 0.1rem;
     color: grey;
   }
+  .navbar__menu-item {
+    padding-right: 2rem;
+  }
   .navbar__ul-li {
     padding: 0 0.5em 0.25em;
     position: relative;
@@ -521,6 +524,15 @@
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.pricing__section label[for=currency-selector] {
+  font-family: "Raleway";
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 @media only screen and (min-width: 1000px) {
   .pricing__section {

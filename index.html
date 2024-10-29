@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
@@ -18,16 +19,18 @@
      <nav class="navbar">
         <h1 class="navbar__logo">OXYGENShop</h1>
         <h1 class="navbar__logo-web">OXYGEN Shop</h1>
-
-        <img class="navbar__menu-img" src="images/Menu.png" alt="Menu Icon"/>
+    
+        <button id="hamburger">
+            <img src="images/Menu.png" alt="Menu Icon">
+        </button>
         
         <ul class="navbar__web-menu">
-            <li class="navbar__web-menu">WHY US</li>
-            <li class="navbar__web-menu">BENEFITS</li>
-            <li class="navbar__web-menu">PRICES</li>
-            <li class="navbar__web-menu">CONTACT</li>
+            <li class="navbar__menu-item">WHY US</li>
+            <li class="navbar__menu-item">BENEFITS</li>
+            <li class="navbar__menu-item">PRICES</li>
+            <li class="navbar__menu-item">CONTACT</li>
         </ul>
-    </nav>
+    </nav>    
  
     <header class="first__section">
         <h2 class="first__section__text">Sell More!</h2>
@@ -114,6 +117,13 @@
          
         <section class="pricing__section">
             <h1 class="pricing__section__header">Pricing</h1>
+
+            <label for="currency-selector">Select Currency:</label>
+            <select id="currency-selector">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+            </select>
         
         <div class="pricing__web">
 
@@ -212,6 +222,10 @@
         <img class="footer__img2" src="images/Facebook (3) 2.png" alt="Facebook Icon"/>
     </div>
 </footer>
+
+    <script src="JavaScript/hamburger_menu.js"></script>
+    <script src="JavaScript/currency_change.js"></script>
+
 
 </body>
 </html>
