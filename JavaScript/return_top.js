@@ -1,9 +1,7 @@
 const mybutton = document.getElementById("top-button");
 
-window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop < 95%) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -13,5 +11,7 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
+
+window.addEventListener("scroll", scrollFunction);
 
 mybutton.addEventListener("click", topFunction);

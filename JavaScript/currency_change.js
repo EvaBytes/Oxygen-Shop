@@ -8,21 +8,25 @@ const currencySelector = document.getElementById("currency-selector");
 /*Hago la solicitud a la API, en la que 
 se encuentran los cambios de moneda*/
 
-    fetch("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json")
+    fetch("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json")
         .then(response => {
             if (response.ok) { 
                 return response.json().then(rates=>{
                     console.log(rates)
+
 //Creo una función para actualizar los precios según la moneda que seleccione
         function updatePrices() {
             const selectedCurrency = currencySelector.value;
-            const exchangeRate = rates[selectedCurrency] || 1;
+            const exchangeRate = rates.usd[selectedCurrency];
             const currencySymbol = currencySymbols[selectedCurrency];
 
 
 // Para actualizar los precios de cada plan...
         ["basic", "pro", "premium"].forEach(plan => {
             const price = basePrices[plan] * exchangeRate;
+            console.log(exchangeRate);
+            console.log(basePrices[plan])
+            
             document.querySelector(`.${plan}__price`).textContent = 
                 price === 0 ? `${currencySymbol}0` : `${currencySymbol}${price.toFixed(2)}`;
             });
