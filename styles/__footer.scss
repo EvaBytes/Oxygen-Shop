@@ -36,7 +36,6 @@
     }
 
 
-
     @media only screen and (min-width: 1000px){
 
         &__main-text{
@@ -71,4 +70,23 @@
 
     }  
 
+
 }
+
+#top-button {
+    display: none; 
+    position: fixed; 
+    right: 2rem;
+    bottom: 20px;
+    border: none; 
+    outline: none; 
+    background-color:rgb(8, 166, 228);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 18px; 
+  }
+  
+#top-button:hover {
+    background-color:rgb(150, 157, 160);
+  }
