@@ -51,14 +51,20 @@
   padding: 1rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
+.navbar__mobile-menu {
+  display: none;
+}
 .navbar__mobile-menu.active {
   display: block;
 }
 .navbar__menu-item {
-  padding: 0.8rem 0;
-  font-size: 1.2rem;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 1rem;
+  margin-left: 1.4rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  text-align: left;
 }
 @media only screen and (min-width: 1000px) {
   .navbar {
@@ -66,7 +72,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Display desktop menu on larger screens */
   }
   .navbar__menu-img {
     display: none;

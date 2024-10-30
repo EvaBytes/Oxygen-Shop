@@ -25,10 +25,10 @@
         </button>
         
         <ul class="navbar__mobile-menu" id="mobileMenu">
-            <li class="navbar__menu-item">Why Us</li>
-            <li class="navbar__menu-item">Benefits</li>
-            <li class="navbar__menu-item">Prices</li>
-            <li class="navbar__menu-item">Contact</li>
+            <li class="navbar__menu-item">WHY US</li>
+            <li class="navbar__menu-item">BENEFITS</li>
+            <li class="navbar__menu-item">PRICES</li>
+            <li class="navbar__menu-item">CONTACT</li>
         </ul>
 
         <ul class="navbar__web-menu">
@@ -203,17 +203,19 @@
             </article>
 
             
-            <form class="form__section">
-                <label for="name" class="form__section__name">NAME</label>
-                <input type="text" name="name" class="form__section__input">
-
-                <label for="email" class="form__section__email">EMAIL</label>
-                <input type="email" name="email" class="form__section__input">
-
-                <input class="form__section__checkbox">
-                <p class="form__section__consentment" alt="Consentment Personal Data">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-                <button class="send__button">Send</button>
-            </form>
+        <form class="form__section" id="contactForm">
+            <label for="name" class="form__section__name">NAME</label>
+            <input type="text" name="name" class="form__section__input" id="name">
+            
+            <label for="email" class="form__section__email">EMAIL</label>
+            <input type="email" name="email" class="form__section__input" id="email">
+            
+            <input type="checkbox" class="form__section__checkbox" id="consentCheckbox">
+            <p class="form__section__consentment" alt="Consentment Personal Data">I hereby give consent...</p>
+                
+            <button type="submit" class="send__button">Send</button>
+        </form>
+            
                    
         </section>
 
@@ -229,7 +231,7 @@
         <img class="footer__img2" src="images/Facebook (3) 2.png" alt="Facebook Icon"/>
     </div>
 
-    <button onclick="topFunction()" id="top-button" title="Go to top">↑</button>
+    <button id="top-button" title="Go to top">↑</button>
 
 </footer>
 

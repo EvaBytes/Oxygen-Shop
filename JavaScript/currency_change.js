@@ -22,7 +22,7 @@ se encuentran los cambios de moneda*/
 
 // Para actualizar los precios de cada plan...
         ["basic", "pro", "premium"].forEach(plan => {
-            const price = basePrices[plan] * exchangeRate.usd;
+            const price = basePrices[plan] * exchangeRate;
             document.querySelector(`.${plan}__price`).textContent = 
                 price === 0 ? `${currencySymbol}0` : `${currencySymbol}${price.toFixed(2)}`;
             });
