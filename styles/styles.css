@@ -66,6 +66,14 @@
   letter-spacing: 0.15rem;
   text-align: left;
 }
+.navbar__scrollbar {
+  position: fixed;
+  height: 0.5rem;
+  width: 0%;
+  background-color: rgb(8, 166, 228);
+  transition: width 0.1s ease;
+  z-index: 1000;
+}
 @media only screen and (min-width: 1000px) {
   .navbar {
     padding: 0.2rem;

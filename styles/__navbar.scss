@@ -59,6 +59,17 @@
         text-align: left;
     }
 
+    
+
+    &__scrollbar {
+        position: fixed;
+        height: .5rem;
+        width: 0%;
+        background-color: rgb(8, 166, 228);
+        transition: width 0.1s ease; 
+        z-index: 1000; 
+    }
+
 
     @media only screen and (min-width: 1000px) {
         padding: .2rem;
@@ -116,5 +127,7 @@
             color: #000000;
             font-weight: 700;
         }
+        
+
     }
 }
