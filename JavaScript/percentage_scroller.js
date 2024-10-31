@@ -1,9 +1,17 @@
 window.addEventListener("load", () => {
     const progress = document.getElementById("percentageScroller");
-    requestAnimationFrame(carga);
 
-    function carga(){
-        progress.style.width = `${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}%`;
-        requestAnimationFrame(carga);
-    }
+    window.addEventListener ("scroll", () => {
+        const h = this.document.documentElement;
+
+        const st = h.scrollTop || this.document.body.scrollTop;
+    
+        const sh = h.scrollHeight || this.document.body.scrollHeight;
+    
+        const percent = (st / (sh - h.clientHeight)) * 100;
+    
+        progress.style.width = percent + "%";
+        
+    })
+
 });
