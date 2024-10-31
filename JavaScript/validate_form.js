@@ -1,6 +1,5 @@
+document.getElementById('contactForm').addEventListener("submit")
 
-document.getElementById('contactForm').addEventListener("send")
-    
 //¿Qué elementos queremos que sean rellenados?
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
