@@ -13,8 +13,6 @@
 
 <body>
 
-     <!-- FIRST section-->
-
      <nav class="navbar">
         <h1 class="navbar__logo">OXYGENShop</h1>
         <h1 class="navbar__logo-web">OXYGEN Shop</h1>
@@ -53,37 +51,35 @@
         <img class="first__section__image-web" src="images/web/Background.png" alt="Background Image Web"/>
     </header>
        
-     <!-- SECOND section-->
 
-        <section class="second__section">
-            <h2 class="second__section__main-text">The most popular<br>sales platform in</br>country</h2>
-            <h2 class="second__section__text-web">The most popular sales platform in country</h2>
+    <section class="second__section">
+        <h2 class="second__section__main-text">The most popular<br>sales platform in</br>country</h2>
+        <h2 class="second__section__text-web">The most popular sales platform in country</h2>
 
-            <article class="second__section__icons-web">
-                <div>
-                    <img class="second__section__red-dot" src="images/Ellipse 1.png" alt="Daily entries image"/>
-                    <img class="second__section__person-icon" src="images/Group.png" alt="Daily entries image"/>
-                    <p class="second__section__entries-number">100000+</p>
-                    <p class="second__section__entries-text" >daily entries</p>
-                </div>
-                <div>
-                    <img class="second__section__green-dot" src="images/Ellipse 2.png" alt="Daily views"/>
-                    <img class="second__section__views-icon" src="images/Eye 2.png" alt="Daily views"/>
-                    <p class="second__section__views-number">2000000+</p>
-                    <p class="second__section__views-text" >seen products<br>every day<br></p>
-                </div>
+        <article class="second__section__icons-web">
+            <div>
+                <img class="second__section__red-dot" src="images/Ellipse 1.png" alt="Daily entries image"/>
+                <img class="second__section__person-icon" src="images/Group.png" alt="Daily entries image"/>
+                <p class="second__section__entries-number">100000+</p>
+                <p class="second__section__entries-text" >daily entries</p>
+            </div>
 
-                <div>
-                    <img class="second__section__green-dot" src="images/Ellipse 1 (1).png" alt="Daily post"/>
-                    <img class="second__section__post-icon" src="images/Group (1).png" alt="Daily post"/>
-                    <p class="second__section__post-number">10000+</p>
-                    <p class="second__section__post-text" >added posts<br>daily</p><br></p>
-                </div>
-            </article>
+             <div>
+                <img class="second__section__green-dot" src="images/Ellipse 2.png" alt="Daily views"/>
+                <img class="second__section__views-icon" src="images/Eye 2.png" alt="Daily views"/>
+                <p class="second__section__views-number">2000000+</p>
+                <p class="second__section__views-text" >seen products<br>every day<br></p>
+            </div>
 
-        </section>
+            <div>
+                <img class="second__section__green-dot" src="images/Ellipse 1 (1).png" alt="Daily post"/>
+                <img class="second__section__post-icon" src="images/Group (1).png" alt="Daily post"/>
+                <p class="second__section__post-number">10000+</p>
+                <p class="second__section__post-text" >added posts<br>daily</p><br></p>
+            </div>
+        </article>
 
-     <!-- THIRD section-->
+    </section>
 
         <section class="third__section">
         
@@ -123,8 +119,7 @@
             </article>
         </section>
 
-     <!-- PRICING section-->
-         
+
         <section class="pricing__section">
             <h1 class="pricing__section__header">Pricing</h1>
 
@@ -184,26 +179,38 @@
         </div> 
     </section>
 
+<div id="slideShow" class="slider-container">
+    <div class="slider-wrapper">
+        <div class="inner-photo"><img src="images/seo-computer_959IURDRGJ.jpg" alt="Macbook"></div>
+        <div class="inner-photo"><img src="images/negative-space-code-editor-web-design-macbook-pro-eugene-thumb.jpg" alt="Code Editor"></div>
+        <div class="inner-photo"><img src="images/light-painting-1062x708.jpg" alt="Light painting"></div>
+    </div>
+    
 
+    <button id="prev" class="slider-nav left">&lt;</button>
+    <button id="next" class="slider-nav right">&gt;</button>
 
-     <!-- CONTACT section-->
-      <section class="contact">
+    <div id="dots" class="slider-dots"></div>
+</div>
+    
 
-            <article class="web">
-                <h2 class="contact__main-text">Any questions?</h2>
-                <p class="contact__p">Leave your email adress or call us!</p>
+<section class="contact">
+
+        <article class="web">
+            <h2 class="contact__main-text">Any questions?</h2>
+            <p class="contact__p">Leave your email adress or call us!</p>
             
 
-                <div class="mail">
-                    <img class="mail__image" src="images/Mail.png" alt="Mail Icon"/>
-                    <p class="mail__p">info@bestshop.xyz</p>
-                </div>
+            <div class="mail">
+                <img class="mail__image" src="images/Mail.png" alt="Mail Icon"/>
+                <p class="mail__p">info@bestshop.xyz</p>
+            </div>
 
-                <div class="phone">
-                    <img class="phone__image" src="images/Phone.png" alt="Phone Icon"/>
-                    <p class="phone__p">123 456 789</p>
-                </div>
-            </article>
+            <div class="phone">
+                <img class="phone__image" src="images/Phone.png" alt="Phone Icon"/>
+                <p class="phone__p">123 456 789</p>
+            </div>
+        </article>
 
             
         <form class="form__section" id="contactForm">
@@ -219,7 +226,7 @@
             <button type="submit" class="send__button">Send</button>
         </form>
             
-                   
+            
         </section>
 
 
@@ -243,6 +250,7 @@
     <script src="JavaScript/return_top.js"></script>
     <script src="JavaScript/validate_form.js"></script>
     <script src="JavaScript/percentage_scroller.js"></script>
+    <script src="JavaScript/slider.js"></script>
 
 
 </body>
