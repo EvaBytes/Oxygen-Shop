@@ -22,6 +22,17 @@
         margin-right: .5rem;
       }
 
+    #currency-selector {
+        font-size: 1rem;
+        color: #333;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: .3rem;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        align-content: center;
+    }
+
     @media only screen and (min-width: 1000px){
             padding-bottom: 3rem;
             padding-top: 6rem;

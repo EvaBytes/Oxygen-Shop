@@ -579,6 +579,16 @@
   color: #000000;
   margin-right: 0.5rem;
 }
+.pricing__section #currency-selector {
+  font-size: 1rem;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  align-content: center;
+}
 @media only screen and (min-width: 1000px) {
   .pricing__section {
     padding-bottom: 3rem;
