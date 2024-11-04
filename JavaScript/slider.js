@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = (currentIndex + innerPhotoLength - 1) % innerPhotoLength;
         showSlide(currentIndex);
     }
-
   
     function nextSlide() {
         currentIndex = (currentIndex + 1) % innerPhotoLength;
