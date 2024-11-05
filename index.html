@@ -13,12 +13,14 @@
 
 <body>
 
-     <nav class="navbar">
+    <nav class="navbar">
         <h1 class="navbar__logo">OXYGENShop</h1>
         <h1 class="navbar__logo-web">OXYGEN Shop</h1>
     
         <a id="hamburger" class="navbar__menu-img">
-            <img src="images/Menu.png" alt="Menu Icon">
+            <img src="images/Menu.png" alt="Menu Icon"/>
+            
+
         </a>
         
         <ul class="navbar__mobile-menu" id="mobileMenu">
@@ -50,7 +52,7 @@
 
         <img class="first__section__image-web" src="images/web/Background.png" alt="Background Image Web"/>
     </header>
-       
+    
 
     <section class="second__section">
         <h2 class="second__section__main-text">The most popular<br>sales platform in</br>country</h2>
@@ -64,7 +66,7 @@
                 <p class="second__section__entries-text" >daily entries</p>
             </div>
 
-             <div>
+            <div>
                 <img class="second__section__green-dot" src="images/Ellipse 2.png" alt="Daily views"/>
                 <img class="second__section__views-icon" src="images/Eye 2.png" alt="Daily views"/>
                 <p class="second__section__views-number">2000000+</p>
@@ -94,7 +96,7 @@
                     <p class="first__card__p-macbook2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </article>
-     
+    
             <article class="second__card">
                 <div class="second__card__img">
                     <img class="second__card__iphone" src="images/iPhone2 2.png" alt="Iphone Image"/>
@@ -106,7 +108,7 @@
                     <p class="second__card__p-iphone">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </article>
-       
+    
             <article class="third__card">
                 <div class="third__card__text-web">
                     <h2 class="third__card__text-trumpet">Increase recognition your brand!</h2>
@@ -144,11 +146,11 @@
                 </ul>
 
                 <button class="basic__pricing-button">Begin</button>
-             
+            
             </article>
 
             <article class="pro">
-           
+        
                 <h2 class="pro__text">Professional</h2>
                 <p class="pro__price">$25</p>
                 <p class="pro__limited-offer">Limited offer</p>
@@ -245,12 +247,25 @@
 
 </footer>
 
+<div id="newsletterModal" class="modal">
+    <div class="modal__modal-content">
+        <span id="closeModal" class="modal__close">&times;</span>
+        <h2 class="modal__suscription">Subscribe to our Newsletter</h2>
+        <form id="newsletterForm" action="/path/to/contact-form-endpoint" method="post">
+            <label class="modal__email" for="newsletterEmail">Email:</label>
+            <input type="email" id="newsletterEmail" name="email" required>
+            <button id="modal_button" type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+
     <script src="JavaScript/hamburger_menu.js"></script>
     <script src="JavaScript/currency_change.js"></script>
     <script src="JavaScript/return_top.js"></script>
     <script src="JavaScript/validate_form.js"></script>
     <script src="JavaScript/percentage_scroller.js"></script>
     <script src="JavaScript/slider.js"></script>
+    <script src="JavaScript/Popup.js"></script>
 
 
 </body>
