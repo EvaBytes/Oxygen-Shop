@@ -1275,28 +1275,32 @@
   align-items: center;
   z-index: 1000;
 }
-.modal__modal__modal-content {
+
+.modal__modal-content {
   background-color: #fff;
-  padding: 3rem;
+  padding: 2.5rem;
   border-radius: 5px;
   width: 80%;
   max-width: 18rem;
   position: relative;
   text-align: center;
 }
-.modal__modal__close {
+
+.modal__close {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 24px;
   cursor: pointer;
 }
-.modal__modal__email {
+
+.modal__email {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
 }
-.modal__modal__suscription {
+
+.modal__suscription {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -1304,4 +1308,22 @@
   text-align: center;
   margin-bottom: 20px;
   line-height: 1.4;
+}
+
+.modal__button {
+  background-color: rgb(8, 166, 228);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal__button:hover {
+  background-color: rgb(6, 130, 180); /* Darker shade on hover */
 }/*# sourceMappingURL=styles.css.map */

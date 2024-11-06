@@ -15,11 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Para que la pop-up salte a los 5 segundos o 25% de desplazamiento de la página
     setTimeout(showModal, 5000);
-    window.addEventListener("scroll", () => {
-        if (window.scrollY / document.body.scrollHeight > 0.25) {
-            showModal();
-        }
-    });
 
 // Cerrar modal con X, fuera del modal o con tecla ESC
     closeModal.addEventListener("click", hideModal);
@@ -51,5 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
-});
-
+})
