@@ -16,23 +16,19 @@
     padding: 2.5rem;
     border-radius: 5px;
     width: 80%;
-    max-width: 18rem;
+    max-width: 30rem; 
+    height: auto;
     position: relative;
     text-align: center;
+
 }
 
 .modal__close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.modal__email {
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;         
-    font-weight:normal;    
+    top: .5rem; 
+    right: 1rem; 
+    font-size: 2rem;
+ 
 }
 
 .modal__suscription {
@@ -41,8 +37,24 @@
     font-weight: bold;      
     color: rgb(8, 166, 228);           
     text-align: center;      
-    margin-bottom: 20px;      
-    line-height: 1.4;       
+    margin-bottom: 1rem; 
+}
+
+.modal__email {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;         
+    font-weight: normal;    
+    margin-bottom: 1rem;
+}
+
+.form__section__input {
+    width: 100%; 
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
 }
 
 .modal__button {
@@ -54,11 +66,12 @@
     font-size: 16px; 
     font-family: "Raleway", sans-serif; 
     font-weight: bold; 
-    margin-top: .5rem;
+    margin-top: 1rem; 
     cursor: pointer; 
     transition: background-color 0.3s ease;
+    width: 60%; 
 }
 
 .modal__button:hover {
-    background-color: rgb(6, 130, 180); /* Darker shade on hover */
+    background-color: rgb(6, 130, 180); 
 }
