@@ -13,10 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "none";
     }
 
-// Para que la pop-up salte a los 5 segundos o 25% de desplazamiento de la página
     setTimeout(showModal, 5000);
 
-// Cerrar modal con X, fuera del modal o con tecla ESC
     closeModal.addEventListener("click", hideModal);
     window.addEventListener("click", (event) => {
         if (event.target === modal) hideModal();
@@ -25,11 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.key === "Escape") hideModal();
     });
 
-// Si queremos validar y enviar el formulario, eventListener para enviar si el correo es válido
     newsletterForm.addEventListener("submit", (event) => {
         event.preventDefault();
         if (validateEmail(newsletterEmail.value)) {
-            // Envía el formulario si el correo es válido
             fetch(newsletterForm.action, {
                 method: "POST",
                 body: new URLSearchParams(new FormData(newsletterForm)),
@@ -41,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Validación básica de email
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
