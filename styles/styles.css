@@ -1275,8 +1275,7 @@
   align-items: center;
   z-index: 1000;
 }
-
-.modal__modal-content {
+.modal__modal__modal-content {
   background-color: #fff;
   padding: 3rem;
   border-radius: 5px;
@@ -1285,16 +1284,19 @@
   position: relative;
   text-align: center;
 }
-
-.modal__close {
+.modal__modal__close {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 24px;
   cursor: pointer;
 }
-
-.modal__suscription {
+.modal__modal__email {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.modal__modal__suscription {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: bold;
