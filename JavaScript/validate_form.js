@@ -1,50 +1,68 @@
-// Seleccionamos los elementos del formulario
+
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const consentCheckbox = document.getElementById('consentCheckbox');
 const checkboxErrorMessage = document.getElementById('checkboxErrorMessage');
 
-// Función para validar los campos del formulario
+
 function validateForm() {
     let isValid = true;
 
-// Validación del nombre
     if (nameInput.value.length < 2 || nameInput.value.length > 100) {
-        nameInput.classList.add('error'); // Añade borde rojo si el nombre es inválido
+        nameInput.classList.add('error');
         isValid = false;
     } else {
-        nameInput.classList.remove('error'); // Quita borde rojo si el nombre es válido
+        nameInput.classList.remove('error');
     }
 
-// Validación del email
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(emailInput.value)) {
-        emailInput.classList.add('error'); // Añade borde rojo si el email es inválido
+        emailInput.classList.add('error');
         isValid = false;
     } else {
-        emailInput.classList.remove('error'); // Quita borde rojo si el email es válido
+        emailInput.classList.remove('error');
     }
 
-    // Validación del checkbox de consentimiento
+
     if (!consentCheckbox.checked) {
-        consentCheckbox.classList.add('error'); // Añade borde rojo si el checkbox no está marcado
+        consentCheckbox.classList.add('error');
         isValid = false;
-        checkboxErrorMessage.style.display = 'block'; // Muestra mensaje de error para el checkbox
+        checkboxErrorMessage.style.display = 'block';
     } else {
-        consentCheckbox.classList.remove('error'); // Quita borde rojo si el checkbox está marcado
-        checkboxErrorMessage.style.display = 'none'; // Oculta mensaje de error
+        consentCheckbox.classList.remove('error');
+        checkboxErrorMessage.style.display = 'none';
     }
 
     return isValid;
 }
 
-// Evento de envío del formulario
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    // Prevenir el envío del formulario si es inválido
-    if (!validateForm()) {
-        event.preventDefault(); // Evita el envío del formulario si hay errores
-        alert("Por favor, completa correctamente todos los campos."); // Mensaje de error general
+    event.preventDefault(); 
+
+    if (validateForm()) {
+        const formData = {
+            name: nameInput.value,
+            email: emailInput.value,
+            consent: consentCheckbox.checked
+        };
+
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert("Formulario enviado correctamente!");
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert("Hubo un problema al enviar el formulario.");
+        });
     } else {
-        alert("Formulario enviado correctamente!");
+        alert("Por favor, completa correctamente todos los campos.");
     }
 });
