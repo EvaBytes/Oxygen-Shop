@@ -1119,8 +1119,8 @@
 }
 
 .form__section__checkbox {
-  pointer-events: auto;
-  opacity: 1;
+  position: relative;
+  z-index: 999;
 }
 
 .error {

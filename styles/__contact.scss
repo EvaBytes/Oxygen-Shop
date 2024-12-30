@@ -127,7 +127,6 @@
         border-right: 0;
         border-bottom: 1px solid rgba(149, 152, 154, 1);
 
-        // Clase de error para inputs
         &.error {
             border-bottom: 2px solid red;
         }
@@ -139,7 +138,6 @@
         width: 20px;
         height: 20px;
 
-        // Clase de error para el checkbox
         &.error {
             border: 2px solid red;
         }
@@ -201,9 +199,10 @@
 }
 
 .form__section__checkbox {
-    pointer-events: auto;
-    opacity: 1; 
+    position: relative;
+    z-index: 999;
 }
+
 
 .error {
     border: 1px solid red;
