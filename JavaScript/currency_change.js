@@ -1,12 +1,6 @@
-/*Defino las variables para los objetos que quiero asociar 
-a los precios, al tipo de moneda y el ID del HTML*/
-
 const basePrices = { basic: 0, pro: 25, premium: 60 };
 const currencySymbols = { usd: "$", gbp: "£", eur: "€" };
 const currencySelector = document.getElementById("currency-selector");
-
-/*Hago la solicitud a la API, en la que 
-se encuentran los cambios de moneda*/
 
     fetch("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json")
         .then(response => {
@@ -14,14 +8,13 @@ se encuentran los cambios de moneda*/
                 return response.json().then(rates=>{
                     console.log(rates)
 
-//Creo una función para actualizar los precios según la moneda que seleccione
         function updatePrices() {
             const selectedCurrency = currencySelector.value;
             const exchangeRate = rates.usd[selectedCurrency];
             const currencySymbol = currencySymbols[selectedCurrency];
 
 
-// Para actualizar los precios de cada plan...
+
         ["basic", "pro", "premium"].forEach(plan => {
             const price = basePrices[plan] * exchangeRate;
             console.log(exchangeRate);
@@ -32,7 +25,6 @@ se encuentran los cambios de moneda*/
             });
         }
 
-// Agrego el listener para obtener las tasas de cambio
     currencySelector.addEventListener("change", updatePrices);
                 })
             } else {

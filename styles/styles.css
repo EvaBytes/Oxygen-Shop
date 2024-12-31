@@ -181,6 +181,13 @@
   box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
   font-size: large;
   font-weight: 500;
+  transition: all 0.2s ease;
+}
+.first__section__button-shop:hover {
+  background-color: rgb(5, 140, 200);
+  color: rgb(240, 240, 240);
+  transform: scale(1.05);
+  box-shadow: 10px 8px 10px rgba(7, 172, 230, 0.35);
 }
 .first__section__image {
   display: block;
@@ -1107,6 +1114,7 @@
   box-shadow: 7px 6px 6px rgba(7, 172, 230, 0.29);
   font-size: large;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 @media only screen and (min-width: 1000px) {
   .send__button {
@@ -1116,6 +1124,13 @@
     padding-left: 6.5rem;
     margin-left: 13.5rem;
   }
+}
+
+.send__button:hover {
+  background-color: rgb(5, 140, 200);
+  color: rgb(240, 240, 240);
+  transform: scale(1.05);
+  box-shadow: 10px 8px 10px rgba(7, 172, 230, 0.35);
 }
 
 .form__section__checkbox {
