@@ -31,11 +31,12 @@
         </ul>
 
         <ul class="navbar__web-menu">
-            <li class="navbar__menu-item">WHY US</li>
-            <li class="navbar__menu-item">BENEFITS</li>
-            <li class="navbar__menu-item">PRICES</li>
-            <li class="navbar__menu-item">CONTACT</li>
+            <li class="navbar__menu-item" data-target="whyUs">WHY US</li>
+            <li class="navbar__menu-item" data-target="benefits">BENEFITS</li>
+            <li class="navbar__menu-item" data-target="pricing">PRICES</li>
+            <li class="navbar__menu-item" data-target="contact">CONTACT</li>
         </ul>
+        
     </nav>    
 
     <div id="mainScroller">
@@ -54,7 +55,7 @@
     </header>
     
 
-    <section class="second__section">
+    <section id="whyUs" class="second__section">
         <h2 class="second__section__main-text">The most popular<br>sales platform in</br>country</h2>
         <h2 class="second__section__text-web">The most popular sales platform in country</h2>
 
@@ -83,7 +84,7 @@
 
     </section>
 
-        <section class="third__section">
+    <section id="benefits" class="third__section">
         
             <article class="first__card">
                 <div class="first__card__img">
@@ -122,7 +123,7 @@
         </section>
 
 
-        <section class="pricing__section">
+        <section id="pricing" class="pricing__section">
             <h1 class="pricing__section__header">Pricing</h1>
 
             <label class = "pricing__section__currency-selector" for="currency-selector">Select Currency:</label>
@@ -196,7 +197,7 @@
 </div>
     
 
-<section class="contact">
+<section id="contact" class="contact">
 
         <article class="web">
             <h2 class="contact__main-text">Any questions?</h2>
@@ -261,6 +262,7 @@
 </div>
 
     <script src="JavaScript/hamburger_menu.js"></script>
+    <script src="JavaScript/menu_scroll.js"></script>
     <script src="JavaScript/currency_change.js"></script>
     <script src="JavaScript/return_top.js"></script>
     <script src="JavaScript/validate_form.js"></script>
