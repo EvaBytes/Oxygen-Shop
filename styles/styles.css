@@ -1334,6 +1334,7 @@
 
 .modal__close {
   position: absolute;
+  color: grey;
   top: 0.5rem;
   right: 1rem;
   font-size: 2rem;

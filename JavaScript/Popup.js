@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showModal() {
         modal.style.display = "flex";
-
     }
 
     function hideModal() {
@@ -16,11 +15,22 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(showModal, 5000);
 
     closeModal.addEventListener("click", hideModal);
+
     window.addEventListener("click", (event) => {
         if (event.target === modal) hideModal();
     });
+
     window.addEventListener("keydown", (event) => {
         if (event.key === "Escape") hideModal();
+    });
+
+    closeModal.addEventListener("mouseover", () => {
+        closeModal.style.color = "darkgrey"; 
+        closeModal.style.cursor = "pointer"; 
+    });
+
+    closeModal.addEventListener("mouseout", () => {
+        closeModal.style.color = ""; 
     });
 
     newsletterForm.addEventListener("submit", (event) => {
@@ -41,4 +51,4 @@ document.addEventListener("DOMContentLoaded", () => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
-})
+});
