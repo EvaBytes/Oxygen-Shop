@@ -1,6 +1,6 @@
 # OxygenShop
 
-Oxygen Shop is a responsive e-commerce platform that allows users to open their shop and increase sales. The project includes a dynamic and visually appealing front-end design, a pricing section, contact forms, and various interactive elements.
+Oxygen Shop is a responsive E-Commerce Platform that allows users to open their shop and increase sales. The project includes a dynamic and visually appealing front-end design, a pricing section, contact forms, and various interactive elements.
 
 ---
 

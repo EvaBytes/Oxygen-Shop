@@ -4,141 +4,147 @@
     box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
 
     &__logo {
-        font-weight: lighter;
-        font-family: "Raleway";
-        font-size: xx-large;
-        color: rgb(8, 166, 228);
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        margin-left: .6rem;
-        display: inline;
+      font-weight: lighter;
+      font-family: "Raleway";
+      font-size: xx-large;
+      color: rgb(8, 166, 228);
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0.6rem;
+      display: inline;
     }
     
     &__menu-img {
-        position: absolute;
-        top: 0.8rem;
-        right: 1.4rem;
-        margin: 0.8rem 1.4rem 1rem;
-        display: inline;
+      position: absolute;
+      top: 0.8rem;
+      right: 1.4rem;
+      margin: 0.8rem 1.4rem 1rem;
+      display: inline;
     }
-
+  
     &__web-menu {
-        display: none;
+      display: none;
     }
-
+  
     &__logo-web {
-        display: none;
+      display: none;
     }
-
+  
+    // Estilos para el menú móvil
     &__mobile-menu {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        list-style: none;
-        padding: 1rem;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      width: 100%;
+      list-style: none;
+      padding: 1rem;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      display: none; // se mostrará cuando se active
     }
-
-    &__mobile-menu {
-        display: none;
-    }
-    
+  
     &__mobile-menu.active {
-        display: block;
+      display: block;
+    }
+  
+    // Estilos generales para los items del menú
+    &__menu-item {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding: 1rem;
+      margin-left: 1.4rem;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15rem;
+      text-align: left;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+  
+    // Estilos específicos para el menú móvil:
+    .navbar__mobile-menu .navbar__menu-item {
+      color: grey; // inactivo
     }
     
-    &__menu-item {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        padding: 1rem;
-        margin-left: 1.4rem;
-        font-size: .6rem;
-        font-weight: 600;
-        letter-spacing: .15rem;
-        text-align: left;
+    .navbar__mobile-menu .navbar__menu-item.active {
+      color: black; // activo
     }
-
-
+  
     @media only screen and (min-width: 1000px) {
-        padding: .2rem;
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &__menu-img {
+        display: none; 
+      }
+  
+      &__mobile-menu {
+        display: none;
+      }
+  
+      &__logo {
+        display: none;
+      }
+  
+      &__logo-web {
+        font-weight: 200;
+        font-family: "Raleway";
+        font-size: large;
+        color: rgb(8, 166, 228);
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 4rem;
+        display: inline;
+      }
+  
+      &__web-menu {
+        list-style: none;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__menu-img {
-            display: none; 
+        align-content: end;
+        margin-right: 4rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        color: grey;
+      }
+  
+      &__menu-item {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 1rem; 
+        margin-left: 1.4rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        letter-spacing: 0.15rem;
+        text-align: left;
+        position: relative;
+        cursor: pointer;
+        transition: color 0.3s;
+    
+        &:after {
+          content: ""; 
+          position: absolute;
+          left: 50%; 
+          bottom: 0;
+          width: 0; 
+          height: 2px;
+          background-color: rgb(8, 166, 228); 
+          transform: translateX(-50%); 
+          transition: width 0.3s ease; 
         }
-
-        &__mobile-menu {
-            display: none;
+    
+        &:hover {
+          color: #000000;
+          font-weight: 700;
         }
-
-        &__logo {
-            display: none;
+    
+        &:hover:after {
+          width: 75%; 
         }
-
-        &__logo-web {
-            font-weight: 200;
-            font-family: "Raleway";
-            font-size: large;
-            color: rgb(8, 166, 228);
-            margin-top: .5rem;
-            margin-bottom: .5rem;
-            margin-left: 4rem;
-            display: inline;
-        }
-
-        &__web-menu {
-            list-style: none;
-            display: flex;
-            align-content: end;
-            margin-right: 4rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 8px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            color: grey;
-        }
-
-        &__menu-item {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            padding: 1rem; 
-            margin-left: 1.4rem;
-            font-size: .6rem;
-            font-weight: 600;
-            letter-spacing: .15rem;
-            text-align: left;
-            position: relative;
-            cursor: pointer;
-            transition: color 0.3s;
-        
-            &:after {
-                content: ""; 
-                position: absolute;
-                left: 50%; 
-                bottom: 0;
-                width: 0; 
-                height: 2px;
-                background-color: rgb(8, 166, 228); 
-                transform: translateX(-50%); 
-                transition: width 0.3s ease; 
-            }
-        
-            &:hover {
-                color: #000000;
-                font-weight: 700;
-            }
-        
-            &:hover:after {
-                width: 75%; 
-            }
-        }
-        
-        
-
+      }
     }
-}
+  }  
 
 #mainScroller{
     width: 100%;

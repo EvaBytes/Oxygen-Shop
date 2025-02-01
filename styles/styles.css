@@ -50,8 +50,6 @@
   list-style: none;
   padding: 1rem;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-.navbar__mobile-menu {
   display: none;
 }
 .navbar__mobile-menu.active {
@@ -65,6 +63,14 @@
   font-weight: 600;
   letter-spacing: 0.15rem;
   text-align: left;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.navbar .navbar__mobile-menu .navbar__menu-item {
+  color: grey;
+}
+.navbar .navbar__mobile-menu .navbar__menu-item.active {
+  color: black;
 }
 @media only screen and (min-width: 1000px) {
   .navbar {
@@ -595,6 +601,7 @@
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .pricing__section__currency-selector {
   font-family: "Raleway";
@@ -622,9 +629,6 @@
     padding-left: 6rem;
   }
 }
-.pricing__section__header {
-  margin-bottom: 2rem;
-}
 
 .basic {
   background-color: rgb(255, 255, 255);
@@ -637,6 +641,11 @@
   padding-left: 2rem;
   border-radius: 1rem;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.basic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(251, 59, 100, 0.5);
 }
 .basic__text {
   font-size: larger;
@@ -678,11 +687,13 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: rgb(251, 59, 100);
   border-color: transparent;
-  padding-top: 1rem;
-  padding-right: 3.5rem;
-  padding-bottom: 1rem;
-  padding-left: 3.5rem;
+  padding: 1rem 3.5rem;
   border-radius: 2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.basic__pricing-button:hover {
+  background-color: #fc6d8c;
+  transform: scale(1.05);
 }
 .basic__check {
   padding-right: 0.7rem;
@@ -736,6 +747,11 @@
   padding-left: 1.5rem;
   border-radius: 1rem;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(7, 172, 230, 0.5);
 }
 .pro__text {
   font-size: larger;
@@ -785,11 +801,13 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: rgb(7, 172, 230);
   border-color: transparent;
-  padding-top: 1rem;
-  padding-right: 3.5rem;
-  padding-bottom: 1rem;
-  padding-left: 3.5rem;
+  padding: 1rem 3.5rem;
   border-radius: 2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.pro__button:hover {
+  background-color: #28c2f8;
+  transform: scale(1.05);
 }
 .pro__check {
   padding-right: 0.7rem;
@@ -848,6 +866,11 @@
   padding-left: 2rem;
   border-radius: 1rem;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.premium:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(85, 223, 180, 0.5);
 }
 .premium__text {
   font-size: larger;
@@ -886,11 +909,13 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: rgb(85, 223, 180);
   border-color: transparent;
-  padding-top: 1rem;
-  padding-right: 3.5rem;
-  padding-bottom: 1rem;
-  padding-left: 3.5rem;
+  padding: 1rem 3.5rem;
   border-radius: 2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.premium__button:hover {
+  background-color: #80e7c7;
+  transform: scale(1.05);
 }
 .premium__check {
   padding-right: 1rem;
@@ -1228,6 +1253,11 @@
   border-radius: 10px;
   margin-bottom: 6rem;
 }
+@media only screen and (min-width: 1000px) {
+  .slider-container {
+    margin-bottom: 10rem;
+  }
+}
 
 .slider-wrapper {
   display: flex;
@@ -1243,11 +1273,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .inner-photo {
-    min-width: 100%;
     height: 30rem;
-    display: none;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -1256,10 +1282,17 @@
 }
 
 .inner-photo img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 95%;
+  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (min-width: 1000px) {
+  .inner-photo img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .slider-nav {
@@ -1334,6 +1367,7 @@
 
 .modal__close {
   position: absolute;
+  color: grey;
   top: 0.5rem;
   right: 1rem;
   font-size: 2rem;
