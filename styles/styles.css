@@ -23,9 +23,7 @@
   font-family: "Raleway";
   font-size: xx-large;
   color: rgb(8, 166, 228);
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 0.6rem;
+  margin: 0.5rem, 0 0.5rem 0.6rem;
   display: inline;
 }
 .navbar__menu-img {
@@ -93,9 +91,7 @@
     font-family: "Raleway";
     font-size: large;
     color: rgb(8, 166, 228);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 4rem;
+    margin: 0.5rem 0 0.5rem 4rem;
     display: inline;
   }
   .navbar__web-menu {
