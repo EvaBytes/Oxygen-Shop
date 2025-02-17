@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.style.display = "none";
     }
 
-    setTimeout(showModal, 5000);
+    setTimeout(showModal, 4000);
 
     closeModal.addEventListener("click", hideModal);
 
